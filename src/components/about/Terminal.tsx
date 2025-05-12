@@ -19,9 +19,9 @@ export default function Terminal() {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   
   const bioTexts = [
-    "Hello there! I'm Edward Odhiambo, a passionate full-stack developer.",
-    "I specialize in React, TypeScript, and Node.js, creating performant and user-friendly applications.",
-    "Type 'help' to see available commands and learn more about me."
+    " Hello there! I'm Edward Odhiambo, a passionate full-stack developer.",
+    "I specialize in JavaScript, TypeScript, React, Next.js, Ruby on Rails, Supabase and Databases(PostgreSQL) creating performant and user-friendly applications.",
+    "Type 'help' to see available commands and learn more about me.",
   ];
 
   useEffect(() => {
