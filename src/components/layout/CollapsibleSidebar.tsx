@@ -13,9 +13,6 @@ import {
   GraduationCap,
   Mail,
   Menu,
-  Github,
-  Linkedin,
-  Twitter,
   BarChart3,
   X
 } from 'lucide-react';
