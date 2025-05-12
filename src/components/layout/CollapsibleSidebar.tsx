@@ -13,12 +13,11 @@ import {
   GraduationCap,
   Mail,
   Menu,
-  Github,
-  Linkedin,
-  Twitter,
   BarChart3,
   X
 } from 'lucide-react';
+import { FaGithub, FaLinkedin, FaGitlab } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import ThemeToggle from './ThemeToggle';
 import { useIsMobile } from '@/hooks/use-mobile';
@@ -68,9 +67,26 @@ export default function CollapsibleSidebar({ setSheetOpen }: Props) {
   ];
 
   const socialLinks = [
-    { href: 'https://github.com', icon: <Github size={20} />, text: 'GitHub' },
-    { href: 'https://linkedin.com', icon: <Linkedin size={20} />, text: 'LinkedIn' },
-    { href: 'https://twitter.com', icon: <Twitter size={20} />, text: 'Twitter' },
+    {
+      href: "https://gitlab.com/odhiambo_ed",
+      icon: <FaGitlab size={20} />,
+      text: "Gitlab",
+    },
+    {
+      href: "https://github.com/odhiambo-ed",
+      icon: <FaGithub size={20} />,
+      text: "GitHub",
+    },
+    {
+      href: "https://www.linkedin.com/in/edward-odhiambo",
+      icon: <FaLinkedin size={20} />,
+      text: "LinkedIn",
+    },
+    {
+      href: "https://x.com/odhiambo_ed",
+      icon: <FaXTwitter size={20} />,
+      text: "Twitter",
+    },
   ];
 
   const handleNavItemClick = () => {
