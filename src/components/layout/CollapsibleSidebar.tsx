@@ -111,7 +111,7 @@ export default function CollapsibleSidebar({ setSheetOpen }: Props) {
 
       <div className="flex flex-col items-center px-3 py-4">
         <Avatar className={`${isCollapsed ? 'h-12 w-12' : 'h-24 w-24'} mb-3 border-2 border-primary`}>
-          <AvatarImage src="/lovable-uploads/6cc34287-a39c-463d-9c27-2ec8c4087d89.png" alt="Edward Odhiambo" />
+          <AvatarImage src="/images/edward.jpeg" alt="Edward Odhiambo" />
           <AvatarFallback>EO</AvatarFallback>
         </Avatar>
         
