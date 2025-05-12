@@ -1,0 +1,61 @@
+
+import { Project } from '@/types/project';
+
+export const projects: Project[] = [
+  {
+    id: '1',
+    title: 'Task Manager App',
+    description: 'A minimalist task management application with drag-and-drop interface and real-time updates.',
+    techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Firebase'],
+    imageUrl: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80',
+    githubUrl: 'https://github.com/username/task-manager',
+    demoUrl: 'https://task-manager-demo.com',
+    featured: true,
+  },
+  {
+    id: '2',
+    title: 'Weather Dashboard',
+    description: 'Real-time weather forecasting application with interactive maps and historical data visualization.',
+    techStack: ['React', 'Redux', 'Chart.js', 'OpenWeather API'],
+    imageUrl: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+    githubUrl: 'https://github.com/username/weather-dashboard',
+    demoUrl: 'https://weather-dashboard-demo.com',
+  },
+  {
+    id: '3',
+    title: 'Markdown Notes',
+    description: 'A note-taking app that supports Markdown formatting with real-time preview and cloud syncing.',
+    techStack: ['React', 'Node.js', 'MongoDB', 'Express'],
+    imageUrl: 'https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+    githubUrl: 'https://github.com/username/markdown-notes',
+    demoUrl: 'https://markdown-notes-demo.com',
+    featured: true,
+  },
+  {
+    id: '4',
+    title: 'Portfolio Website',
+    description: 'A personal portfolio website showcasing projects and skills with a modern and responsive design.',
+    techStack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    imageUrl: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1307&q=80',
+    githubUrl: 'https://github.com/username/portfolio',
+    demoUrl: 'https://my-portfolio-demo.com',
+  },
+  {
+    id: '5',
+    title: 'Recipe Finder',
+    description: 'A web application to discover recipes based on available ingredients with filtering options.',
+    techStack: ['Vue.js', 'Vuex', 'Tailwind CSS', 'Recipe API'],
+    imageUrl: 'https://images.unsplash.com/photo-1556909172-8c2f041fca1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+    githubUrl: 'https://github.com/username/recipe-finder',
+    demoUrl: 'https://recipe-finder-demo.com',
+  },
+  {
+    id: '6',
+    title: 'Budget Tracker',
+    description: 'A personal finance application to track income, expenses, and visualize spending habits.',
+    techStack: ['React', 'Firebase', 'Chart.js', 'Material-UI'],
+    imageUrl: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+    githubUrl: 'https://github.com/username/budget-tracker',
+    demoUrl: 'https://budget-tracker-demo.com',
+  },
+];
