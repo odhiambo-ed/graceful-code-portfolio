@@ -281,7 +281,7 @@ export default function Terminal() {
                 </a>
               </li>
               <li>
-                🐙 GitLab:{" "}
+                🐙 Git:{" "}
                 <a
                   href="https://gitlab.com/odhiambo_ed"
                   target="_blank"
