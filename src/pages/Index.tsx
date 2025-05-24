@@ -11,7 +11,11 @@ const Bio = () => {
         transition={{ duration: 0.5 }}
         className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-center"
       >
-        Bio
+        <img
+          src="/images/edward-logo.png"
+          alt="Logo"
+          className="inline-block h-20 w-auto"
+        />
       </motion.h1>
       
       <div className="w-full h-[calc(100vh-200px)]">
