@@ -19,7 +19,7 @@ const ComingSoon = () => {
         </h1>
 
         <p className="text-lg md:text-xl mb-8 max-w-md mx-auto">
-          We're working hard to bring you something amazing. Please check back later!
+          I am working hard to bring you something amazing. Please check back later!
         </p>
 
         <div className="relative w-full max-w-md h-2 bg-muted rounded-full overflow-hidden">
