@@ -19,8 +19,8 @@ export default function Terminal() {
   const terminalRef = useRef<HTMLDivElement>(null);
 
   const bioTexts = [
-    "Hello there! I'm Edward Odhiambo, a passionate full-stack developer.",
-    "I specialize in React, TypeScript, and Node.js, creating performant and user-friendly applications.",
+    "Hello there! I'm Edward Odhiambo, a maestro full-stack engineer.",
+    "King of React/Next.js + Rails | Typing TypeScript & Taming Databases | AI-Powered Fintech Maestro | Cloud-Native (Docker/K8s) | Collaborative & Adaptive",
     "Type 'help' to see available commands and learn more about me.",
   ];
 
@@ -181,14 +181,16 @@ export default function Terminal() {
       case "whoami":
         return (
           <div className="space-y-2">
-            <p className="text-blue-400 font-bold">Edward Odhiambo</p>
+            <p className="text-blue-400 font-bold">I am Edward Odhiambo</p>
             <p>
-              A passionate full-stack developer with 5+ years of experience
-              building web applications.
+              a Full-Stack Engineer fluent in React/Next.js, Rails, and
+              TypeScript—basically the kind of dev who can tame both frontend
+              pixels and backend logic without breaking a sweat.
             </p>
             <p>
-              I specialize in React, Node.js, and TypeScript, creating
-              performant and user-friendly applications.
+              💻 I wrangle databases, containerize dreams with Docker/K8s, and
+              moonlight as an AI-powered fintech wizard. Collaborative,
+              adaptable, and slightly allergic to boring code.
             </p>
           </div>
         );
@@ -203,6 +205,7 @@ export default function Terminal() {
                 <ul className="list-disc list-inside pl-2">
                   <li>React & Next.js</li>
                   <li>TypeScript</li>
+                  <li>Redux & Context API</li>
                   <li>Tailwind CSS</li>
                   <li>Framer Motion</li>
                 </ul>
@@ -210,10 +213,31 @@ export default function Terminal() {
               <div>
                 <p className="text-orange-400">Backend:</p>
                 <ul className="list-disc list-inside pl-2">
-                  <li>Node.js</li>
-                  <li>Express</li>
+                  <li>Rails</li>
+                  <li>Supabase</li>
                   <li>PostgreSQL</li>
-                  <li>MongoDB</li>
+                  <li>GraphQL</li>
+                  <li>REST APIs</li>
+                </ul>
+              </div>
+              <div>
+                <p className="text-orange-400">DevOps & Cloud:</p>
+                <ul className="list-disc list-inside pl-2">
+                  <li>Docker</li>
+                  <li>Kubernetes (K8s)</li>
+                  <li>Git / GitHub / GitLab</li>
+                  <li>CI/CD</li>
+                  <li>Ansible</li>
+                </ul>
+              </div>
+              <div>
+                <p className="text-orange-400">Other Skills:</p>
+                <ul className="list-disc list-inside pl-2">
+                  <li>Fintech</li>
+                  <li>AI-powered Dev</li>
+                  <li>Collaborative & adaptive</li>
+                  <li>Communicatio</li>
+                  <li>Problem solver</li>
                 </ul>
               </div>
             </div>
@@ -228,21 +252,21 @@ export default function Terminal() {
               <li>
                 📧 Email:{" "}
                 <a
-                  href="mailto:edward@example.com"
+                  href="mailto:odhiamboedward.ouma@gmail.com"
                   className="text-blue-400 hover:underline"
                 >
-                  edward@example.com
+                  odhiamboedward.ouma@gmail.com
                 </a>
               </li>
               <li>
                 🔗 LinkedIn:{" "}
                 <a
-                  href="https://linkedin.com/in/edwardodhiambo"
+                  href="https://www.linkedin.com/in/edward-odhiambo"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-400 hover:underline"
                 >
-                  linkedin.com/in/edwardodhiambo
+                  linkedin.com/in/edward-odhiambo
                 </a>
               </li>
               <li>
@@ -254,6 +278,17 @@ export default function Terminal() {
                   className="text-blue-400 hover:underline"
                 >
                   github.com/odhiambo-ed
+                </a>
+              </li>
+              <li>
+                🐙 GitLab:{" "}
+                <a
+                  href="https://gitlab.com/odhiambo_ed"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:underline"
+                >
+                  gitlab.com/odhiambo_ed
                 </a>
               </li>
             </ul>
