@@ -56,14 +56,30 @@ export default function CollapsibleSidebar({ setSheetOpen }: Props) {
   };
   
   const navItems = [
-    { href: '/', icon: <Home size={20} />, text: 'Bio' },
-    { href: '/dev-stats', icon: <BarChart3 size={20} />, text: 'Dev Stats' },
-    { href: '/projects', icon: <Briefcase size={20} />, text: 'Hobby Projects' },
-    { href: '/work', icon: <Briefcase size={20} />, text: 'Work Projects' },
-    { href: '/resume', icon: <FileText size={20} />, text: 'Resume' },
-    { href: '/products', icon: <ShoppingBag size={20} />, text: 'Products' },
-    { href: '/free-courses', icon: <Book size={20} />, text: 'Free Courses' },
-    { href: '/premium-courses', icon: <GraduationCap size={20} />, text: 'Premium Courses' },
+    { href: "/", icon: <Home size={20} />, text: "Bio" },
+    { href: "/dev-stats", icon: <BarChart3 size={20} />, text: "Dev Stats" },
+    {
+      href: "/coming-soon",
+      icon: <Briefcase size={20} />,
+      text: "Hobby Projects",
+    },
+    {
+      href: "/coming-soon",
+      icon: <Briefcase size={20} />,
+      text: "Work Projects",
+    },
+    { href: "/resume", icon: <FileText size={20} />, text: "Resume" },
+    {
+      href: "/coming-soon",
+      icon: <ShoppingBag size={20} />,
+      text: "Products",
+    },
+    { href: "/coming-soon", icon: <Book size={20} />, text: "Free Courses" },
+    {
+      href: "/coming-soon",
+      icon: <GraduationCap size={20} />,
+      text: "Premium Courses",
+    },
   ];
 
   const socialLinks = [
