@@ -1,6 +1,5 @@
-
-import { motion } from 'framer-motion';
-import { FileText } from 'lucide-react';
+import { motion } from "framer-motion";
+import { FileText, Mail, MapPin, Globe, Phone } from "lucide-react";
 
 const Resume = () => {
   return (
@@ -14,7 +13,7 @@ const Resume = () => {
         <h1 className="text-3xl font-bold mb-4">My Resume</h1>
         <div className="flex justify-center">
           <a
-            href="/resume.pdf"
+            href="/EDWARD_ODHIAMBO_-_Frontend_Engineer_-_JavaScript,_TypeScript,_React_&_Next.pdf"
             download
             className="flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-md hover:bg-primary/90 transition-colors"
           >
@@ -23,7 +22,7 @@ const Resume = () => {
           </a>
         </div>
       </motion.div>
-      
+
       <div className="bg-card shadow-lg rounded-lg p-8 max-w-4xl mx-auto">
         <motion.section
           initial={{ opacity: 0 }}
@@ -31,135 +30,304 @@ const Resume = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="mb-10"
         >
-          <h2 className="text-2xl font-bold mb-2">John Doe</h2>
-          <p className="text-muted-foreground">Full Stack Developer</p>
+          <h2 className="text-2xl font-bold mb-2">Edward Odhiambo</h2>
+          <p className="text-muted-foreground">
+            Frontend Engineer - JavaScript, TypeScript, React & Next
+          </p>
           <div className="mt-4 flex flex-wrap gap-4">
             <div className="flex items-center gap-2">
+              <Mail size={16} className="text-primary" />
               <span className="font-semibold">Email:</span>
-              <a href="mailto:john@example.com" className="text-primary hover:underline">john@example.com</a>
+              <a
+                href="mailto:odhiamboodward.ouma@gmail.com"
+                className="text-primary hover:underline"
+              >
+                odhiamboodward.ouma@gmail.com
+              </a>
             </div>
             <div className="flex items-center gap-2">
+              <Phone size={16} className="text-primary" />
+              <span className="font-semibold">Phone:</span>
+              <span>+254726900598</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <MapPin size={16} className="text-primary" />
               <span className="font-semibold">Location:</span>
-              <span>San Francisco, CA</span>
+              <span>Nairobi, Kenya</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="font-semibold">Portfolio:</span>
-              <a href="https://johndoe.dev" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">johndoe.dev</a>
+              <Globe size={16} className="text-primary" />
+              <span className="font-semibold">Links:</span>
+              <a
+                href="https://linkedin.com/in/edwardodhiambo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline"
+              >
+                LinkedIn
+              </a>
+              <span>|</span>
+              <a
+                href="https://github.com/odhiambo-ed"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline"
+              >
+                GitHub
+              </a>
+              <span>|</span>
+              <a
+                href="https://your-portfolio-domain.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline"
+              >
+                Portfolio
+              </a>
             </div>
           </div>
         </motion.section>
-        
+
         <motion.section
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mb-10"
         >
-          <h2 className="text-xl font-semibold mb-4 pb-2 border-b">Professional Experience</h2>
-          
-          <div className="mb-6">
-            <div className="flex justify-between flex-wrap mb-1">
-              <h3 className="text-lg font-medium">Senior Frontend Developer</h3>
-              <span className="text-sm text-muted-foreground">2021 - Present</span>
-            </div>
-            <p className="text-primary font-medium mb-2">TechCorp Inc.</p>
-            <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-              <li>Led development of company's flagship React-based web application</li>
-              <li>Improved site performance by 40% through code optimization and lazy loading</li>
-              <li>Mentored junior developers and conducted code reviews</li>
-              <li>Implemented CI/CD pipeline reducing deployment time by 60%</li>
-            </ul>
-          </div>
-          
-          <div className="mb-6">
-            <div className="flex justify-between flex-wrap mb-1">
-              <h3 className="text-lg font-medium">Full Stack Developer</h3>
-              <span className="text-sm text-muted-foreground">2019 - 2021</span>
-            </div>
-            <p className="text-primary font-medium mb-2">WebSolutions Ltd</p>
-            <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-              <li>Developed responsive web applications using React and Node.js</li>
-              <li>Created RESTful APIs and implemented authentication systems</li>
-              <li>Worked directly with clients to gather requirements and provide updates</li>
-              <li>Integrated third-party APIs and services</li>
-            </ul>
-          </div>
-          
-          <div>
-            <div className="flex justify-between flex-wrap mb-1">
-              <h3 className="text-lg font-medium">Junior Web Developer</h3>
-              <span className="text-sm text-muted-foreground">2017 - 2019</span>
-            </div>
-            <p className="text-primary font-medium mb-2">StartupHub</p>
-            <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-              <li>Built and maintained client websites using JavaScript, HTML, and CSS</li>
-              <li>Collaborated with designers to implement pixel-perfect UI</li>
-              <li>Optimized websites for maximum speed and scalability</li>
-            </ul>
-          </div>
+          <h2 className="text-xl font-semibold mb-4 pb-2 border-b">Profile</h2>
+          <p className="text-muted-foreground">
+            Front-end Engineer with experience in micro-services architecture,
+            Agile environments, and collaborating with international teams,
+            seeking a new challenge to develop innovative B2C products.
+          </p>
         </motion.section>
-        
+
         <motion.section
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mb-10"
         >
-          <h2 className="text-xl font-semibold mb-4 pb-2 border-b">Education</h2>
-          
-          <div>
+          <h2 className="text-xl font-semibold mb-4 pb-2 border-b">
+            Employment History
+          </h2>
+
+          <div className="mb-6">
             <div className="flex justify-between flex-wrap mb-1">
-              <h3 className="text-lg font-medium">Bachelor of Science in Computer Science</h3>
-              <span className="text-sm text-muted-foreground">2013 - 2017</span>
+              <h3 className="text-lg font-medium">Volunteer Mentor</h3>
+              <span className="text-sm text-muted-foreground">
+                Jun 2022 - Present
+              </span>
             </div>
-            <p className="text-primary font-medium">University of Technology</p>
+            <p className="text-primary font-medium mb-2">
+              Microverse Bootcamp (Remote)
+            </p>
+            <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+              <li>
+                Mentored over 40 students, helping them improve their coding
+                skills and career prospects.
+              </li>
+            </ul>
+          </div>
+
+          <div className="mb-6">
+            <div className="flex justify-between flex-wrap mb-1">
+              <h3 className="text-lg font-medium">Full-Stack Developer</h3>
+              <span className="text-sm text-muted-foreground">
+                Jun 2022 - Dec 2023
+              </span>
+            </div>
+            <p className="text-primary font-medium mb-2">
+              Tetra Pak, Lund, Sweden (Remote)
+            </p>
+            <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+              <li>
+                Developed an EcoPack Dashboard using React and TailwindCSS for
+                real-time environmental insights.
+              </li>
+              <li>
+                Collaborated with design teams to create modern interfaces,
+                increasing user satisfaction by 30%.
+              </li>
+              <li>
+                Enhanced mobile responsiveness and implemented Jest testing,
+                improving engagement by 25% and reducing post-deployment issues
+                by 90%.
+              </li>
+            </ul>
+          </div>
+
+          <div className="mb-6">
+            <div className="flex justify-between flex-wrap mb-1">
+              <h3 className="text-lg font-medium">Front-End Developer</h3>
+              <span className="text-sm text-muted-foreground">
+                Jan 2020 - May 2022
+              </span>
+            </div>
+            <p className="text-primary font-medium mb-2">
+              Smart People Africa Ltd, Nairobi
+            </p>
+            <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+              <li>
+                Integrated front-end with APIs, improving data flow efficiency
+                by 25%.
+              </li>
+              <li>
+                Developed responsive websites for 20+ clients using HTML5,
+                JavaScript, React, and CSS3 with Webpack.
+              </li>
+              <li>Enhanced JSON data handling, reducing load times by 20%.</li>
+            </ul>
           </div>
         </motion.section>
-        
+
         <motion.section
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
           className="mb-10"
         >
-          <h2 className="text-xl font-semibold mb-4 pb-2 border-b">Skills</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-              <h3 className="font-medium mb-2">Frontend</h3>
-              <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-                <li>JavaScript (ES6+), TypeScript</li>
-                <li>React, Next.js, Vue.js</li>
-                <li>Redux, Context API, React Query</li>
-                <li>HTML5, CSS3, Tailwind CSS, SCSS</li>
-                <li>Jest, React Testing Library</li>
-              </ul>
-            </div>
-            
-            <div>
-              <h3 className="font-medium mb-2">Backend</h3>
-              <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-                <li>Node.js, Express</li>
-                <li>REST APIs, GraphQL</li>
-                <li>MongoDB, PostgreSQL</li>
-                <li>Authentication, JWT</li>
-                <li>AWS, Docker, CI/CD</li>
-              </ul>
-            </div>
-          </div>
+          <h2 className="text-xl font-semibold mb-4 pb-2 border-b">Projects</h2>
+
+          <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+            <li>
+              <span className="font-medium text-foreground">
+                Quikk API Dashboard
+              </span>{" "}
+              - A secure Quikk API integration for seamless transactions.
+            </li>
+            <li>
+              <span className="font-medium text-foreground">
+                Forge Marketplace
+              </span>{" "}
+              - A provider marketplace.
+            </li>
+            <li>
+              <span className="font-medium text-foreground">ERMS</span> -
+              Enterprise Resource Hub that streamlines operations through an
+              enhanced user interface built with React and Redux.
+            </li>
+            <li>
+              <span className="font-medium text-foreground">SCOP</span> -
+              Optichain Solution that streamlines supply chain operations.
+            </li>
+          </ul>
         </motion.section>
-        
+
         <motion.section
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.5 }}
+          className="mb-10"
         >
-          <h2 className="text-xl font-semibold mb-4 pb-2 border-b">Certifications</h2>
-          
+          <h2 className="text-xl font-semibold mb-4 pb-2 border-b">
+            Education
+          </h2>
+
+          <div className="mb-4">
+            <div className="flex justify-between flex-wrap mb-1">
+              <h3 className="text-lg font-medium">
+                MSc in Information Systems
+              </h3>
+              <span className="text-sm text-muted-foreground">
+                Oct 2021 - Present
+              </span>
+            </div>
+            <p className="text-primary font-medium">
+              University of Nairobi (EU Blue Card eligible university)
+            </p>
+          </div>
+
+          <div>
+            <div className="flex justify-between flex-wrap mb-1">
+              <h3 className="text-lg font-medium">
+                BSc in Information Technology
+              </h3>
+              <span className="text-sm text-muted-foreground">
+                Oct 2012 - Apr 2016
+              </span>
+            </div>
+            <p className="text-primary font-medium">
+              Murang’a University of Technology (EU Blue Card eligible
+              university)
+            </p>
+          </div>
+        </motion.section>
+
+        <motion.section
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+          className="mb-10"
+        >
+          <h2 className="text-xl font-semibold mb-4 pb-2 border-b">
+            Technologies
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <h3 className="font-medium mb-2">Stack</h3>
+              <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+                <li>JavaScript, TypeScript</li>
+                <li>React, Next.js</li>
+                <li>Ruby, Ruby on Rails</li>
+                <li>PostgreSQL</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-medium mb-2">Others</h3>
+              <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+                <li>Agile Development</li>
+                <li>AWS, Docker, Kubernetes</li>
+                <li>Git, GitHub</li>
+                <li>Jest</li>
+                <li>RESTful API</li>
+                <li>UI/UX</li>
+                <li>Collaboration, Communication Skills</li>
+                <li>Customer Service, Problem Solving Skills, Team Player</li>
+              </ul>
+            </div>
+          </div>
+        </motion.section>
+
+        <motion.section
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.7 }}
+          className="mb-10"
+        >
+          <h2 className="text-xl font-semibold mb-4 pb-2 border-b">
+            Certifications
+          </h2>
+
           <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-            <li>AWS Certified Developer - Associate</li>
-            <li>MongoDB Certified Developer</li>
-            <li>Google Professional Web Developer</li>
+            <li>
+              M-Pesa Mini App & API Development (Safaricom), Moringa School (Mar
+              2024 - May 2024)
+            </li>
+            <li>
+              Full-Stack Developer Bootcamp, Microverse (Feb 2022 - Oct 2022)
+            </li>
+            <li>
+              Certified Ethical Hacker (EC Council), Strathmore University (Oct
+              2020 - Dec 2020)
+            </li>
+          </ul>
+        </motion.section>
+
+        <motion.section
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.8 }}
+        >
+          <h2 className="text-xl font-semibold mb-4 pb-2 border-b">
+            Languages
+          </h2>
+
+          <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+            <li>English</li>
+            <li>German</li>
           </ul>
         </motion.section>
       </div>
