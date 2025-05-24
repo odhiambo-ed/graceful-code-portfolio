@@ -23,33 +23,7 @@ const HireMe = () => {
     });
   };
   
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    try {
-      // Simulate form submission
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      
-      // Here you would normally send the data to formsubmit.co
-      // For demo purposes, we'll just show a success toast
-      toast.success("Your message has been sent! I'll get back to you soon.");
-      
-      // Reset form
-      setFormData({
-        name: '',
-        email: '',
-        workType: '',
-        description: '',
-        budget: '',
-        startDate: '',
-      });
-    } catch (error) {
-      toast.error("There was an error sending your message. Please try again.");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+  // Form submission is now handled by formsubmit.co
 
   return (
     <div className="container mx-auto px-4 py-10">
@@ -78,7 +52,7 @@ const HireMe = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="bg-card rounded-lg p-8 shadow-lg"
         >
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form action="https://formsubmit.co/odhiamboedward.ouma@gmail.com" method="POST" className="space-y-6">
             <div>
               <label htmlFor="name" className="block text-sm font-medium mb-2">
                 Name *
