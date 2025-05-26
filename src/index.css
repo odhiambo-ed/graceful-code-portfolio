@@ -7,37 +7,27 @@
 
 @layer base {
   :root {
-    /* Light Mode Theme */
+    /* Default Light Mode Theme */
     --background: 210 40% 96.1%;
     --foreground: 222.2 47.4% 11.2%;
-    
     --card: 0 0% 100%;
     --card-foreground: 222.2 47.4% 11.2%;
-    
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 47.4% 11.2%;
-    
     --primary: 225 73% 57%;
     --primary-foreground: 210 40% 98%;
-    
     --secondary: 25 95% 53%;
     --secondary-foreground: 222.2 47.4% 11.2%;
-    
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
-    
     --accent: 225 73% 57%;
     --accent-foreground: 222.2 47.4% 11.2%;
-    
     --destructive: 346 87% 50.2%;
     --destructive-foreground: 210 40% 98%;
-    
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
-    
     --radius: 0.5rem;
-
     --sidebar-background: 0 0% 100%;
     --sidebar-foreground: 222.2 84% 4.9%;
     --sidebar-primary: 225 73% 57%;
@@ -48,44 +38,15 @@
     --sidebar-ring: 222.2 84% 4.9%;
   }
 
-  .dark {
-    /* Dark Mode Theme */
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    
-    --primary: 225 73% 57%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    
-    --secondary: 25 95% 53%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    
-    --accent: 225 73% 57%;
-    --accent-foreground: 210 40% 98%;
-    
-    --destructive: 346 87% 50.2%;
-    --destructive-foreground: 210 40% 98%;
-    
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-
-    --sidebar-background: 222.2 84% 4.9%;
-    --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 225 73% 57%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 217.2 32.6% 17.5%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 217.2 32.6% 17.5%;
-    --sidebar-ring: 212.7 26.8% 83.9%;
+  /* Theme classes are now dynamically applied via JavaScript */
+  .dark,
+  .light,
+  .monokai,
+  .dracula,
+  .nord,
+  .solarized-dark,
+  .github-dark {
+    /* CSS variables are set dynamically by the theme system */
   }
 }
 
