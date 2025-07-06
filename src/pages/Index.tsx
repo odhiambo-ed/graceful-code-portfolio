@@ -59,7 +59,7 @@ const Bio = () => {
                 </p>
               </div>
               <img 
-                src="/images/edward-teaching.jpg" 
+                src="/images/edward-teaching.jpeg" 
                 alt="Edward mentoring" 
                 className="w-32 h-32 rounded-full object-cover border-4 border-primary hidden md:block" 
               />
