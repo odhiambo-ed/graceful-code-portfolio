@@ -59,24 +59,24 @@ export default function CollapsibleSidebar({ setSheetOpen }: Props) {
     { href: "/", icon: <Home size={20} />, text: "Bio" },
     { href: "/dev-stats", icon: <BarChart3 size={20} />, text: "Dev Stats" },
     {
-      href: "/coming-soon",
+      href: "/hobby-projects",
       icon: <Briefcase size={20} />,
       text: "Hobby Projects",
     },
     {
-      href: "/coming-soon",
+      href: "/work-projects",
       icon: <Briefcase size={20} />,
       text: "Work Projects",
     },
     { href: "/resume", icon: <FileText size={20} />, text: "Resume" },
     {
-      href: "/coming-soon",
+      href: "/products",
       icon: <ShoppingBag size={20} />,
       text: "Products",
     },
-    { href: "/coming-soon", icon: <Book size={20} />, text: "Free Courses" },
+    { href: "/free-courses", icon: <Book size={20} />, text: "Free Courses" },
     {
-      href: "/coming-soon",
+      href: "/premium-courses",
       icon: <GraduationCap size={20} />,
       text: "Premium Courses",
     },
@@ -190,7 +190,7 @@ export default function CollapsibleSidebar({ setSheetOpen }: Props) {
         </div>
       </div>
       
-      <div className="p-4">
+      <div className="p-2">
         <Link 
           to="/hire-me" 
           className="block w-full py-2 px-4 bg-primary text-primary-foreground rounded-md text-center font-medium hover:bg-primary/90 transition-colors"
