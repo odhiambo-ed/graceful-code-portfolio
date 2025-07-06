@@ -78,23 +78,23 @@ const Bio = () => {
                 <h3 className="text-xl font-semibold mb-2">Career Switchers</h3>
                 <p className="text-muted-foreground mb-4">For professionals looking to transition into tech with practical, job-ready skills.</p>
                 <div className="bg-accent/10 p-4 rounded-md">
-                  <h4 className="font-medium">Program: Code Reset</h4>
+                  <h4 className="font-medium">Programs: Code Reset Intro (4 weeks) & Code Reset Core (5 months)</h4>
                 </div>
               </div>
               
               <div className="bg-card rounded-lg p-6 shadow-md">
-                <h3 className="text-xl font-semibold mb-2">Aspiring Developers (No Career Yet)</h3>
+                <h3 className="text-xl font-semibold mb-2">Aspiring Developers (18-25 Yrs)</h3>
                 <p className="text-muted-foreground mb-4">Build a solid foundation and portfolio to launch your development career.</p>
                 <div className="bg-accent/10 p-4 rounded-md">
-                  <h4 className="font-medium">Program: Code Launchpad</h4>
+                  <h4 className="font-medium">Programs: Code Reset Intro & Code Reset Core</h4>
                 </div>
               </div>
               
               <div className="bg-card rounded-lg p-6 shadow-md">
-                <h3 className="text-xl font-semibold mb-2">Kids (Ages 8–18yrs)</h3>
+                <h3 className="text-xl font-semibold mb-2">Kids & Teens (Ages 8–18)</h3>
                 <p className="text-muted-foreground mb-4">Fun, engaging coding education tailored to young minds and their interests.</p>
                 <div className="bg-accent/10 p-4 rounded-md">
-                  <h4 className="font-medium">Program: CodePlay</h4>
+                  <h4 className="font-medium">Programs: CodePlay & Holiday Camp</h4>
                 </div>
               </div>
               
@@ -102,7 +102,7 @@ const Bio = () => {
                 <h3 className="text-xl font-semibold mb-2">Bootcamp Grads / Junior Devs</h3>
                 <p className="text-muted-foreground mb-4">For bootcamp graduates, juniors feeling stuck, or devs looking to rebuild their portfolio with real projects.</p>
                 <div className="bg-accent/10 p-4 rounded-md">
-                  <h4 className="font-medium">Program: Code Reset Pro</h4>
+                  <h4 className="font-medium">Program: Code Reset Pro (Monthly)</h4>
                 </div>
               </div>
             </div>

@@ -120,54 +120,39 @@ const Mentorship = () => {
                 </thead>
                 <tbody>
                   <tr className="border-b border-border">
-                    <td className="p-3" rowSpan={3}>Career Switchers</td>
-                    <td className="p-3">Code Reset</td>
-                    <td className="p-3">8 weeks</td>
-                    <td className="p-3">35,000</td>
-                  </tr>
-                  <tr className="border-b border-border">
-                    <td className="p-3">Code Reset Premium</td>
-                    <td className="p-3">8 weeks</td>
-                    <td className="p-3">60,000</td>
-                  </tr>
-                  <tr className="border-b border-border">
-                    <td className="p-3">1:1 Mentorship Plan</td>
+                    <td className="p-3" rowSpan={2}>Career Switchers</td>
+                    <td className="p-3">Code Reset Intro</td>
                     <td className="p-3">4 weeks</td>
-                    <td className="p-3">25,000</td>
+                    <td className="p-3">15,000</td>
+                  </tr>
+                  <tr className="border-b border-border">
+                    <td className="p-3">Code Reset Core</td>
+                    <td className="p-3">5 months</td>
+                    <td className="p-3">70,000 or 15,000/month</td>
                   </tr>
                   
                   <tr className="border-b border-border">
-                    <td className="p-3" rowSpan={3}>Aspiring Devs</td>
-                    <td className="p-3">Code Launchpad</td>
-                    <td className="p-3">6 weeks</td>
-                    <td className="p-3">20,000</td>
+                    <td className="p-3" rowSpan={2}>Aspiring Devs (18-25 Yrs)</td>
+                    <td className="p-3">Code Reset Intro</td>
+                    <td className="p-3">4 weeks</td>
+                    <td className="p-3">12,000</td>
                   </tr>
                   <tr className="border-b border-border">
-                    <td className="p-3">Code Launchpad+</td>
-                    <td className="p-3">6 weeks</td>
-                    <td className="p-3">30,000</td>
-                  </tr>
-                  <tr className="border-b border-border">
-                    <td className="p-3">Starter Call</td>
-                    <td className="p-3">1 hour</td>
-                    <td className="p-3">2,000</td>
+                    <td className="p-3">Code Reset Core</td>
+                    <td className="p-3">5 months</td>
+                    <td className="p-3">60,000 or 12,000/month</td>
                   </tr>
                   
                   <tr className="border-b border-border">
-                    <td className="p-3" rowSpan={3}>Kids (10–16)</td>
+                    <td className="p-3" rowSpan={2}>Kids & Teens (8–18)</td>
                     <td className="p-3">CodePlay</td>
                     <td className="p-3">6 weeks</td>
-                    <td className="p-3">10,000</td>
-                  </tr>
-                  <tr className="border-b border-border">
-                    <td className="p-3">CodePlay Premium</td>
-                    <td className="p-3">6 weeks</td>
-                    <td className="p-3">18,000</td>
+                    <td className="p-3">12,000</td>
                   </tr>
                   <tr className="border-b border-border">
                     <td className="p-3">Holiday Camp</td>
                     <td className="p-3">2 weeks</td>
-                    <td className="p-3">12,000</td>
+                    <td className="p-3">15,000</td>
                   </tr>
                   
                   <tr className="border-b border-border">
@@ -207,43 +192,36 @@ const Mentorship = () => {
               <p className="italic">For working professionals who want to move into tech and build job-ready portfolios.</p>
             </div>
             
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 gap-6">
               <Card className="p-6">
-                <h4 className="text-lg font-bold mb-2">Code Reset</h4>
-                <p className="text-2xl font-bold mb-4">KES 35,000</p>
-                <p className="mb-2"><span className="font-medium">Duration:</span> 8 weeks</p>
+                <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-medium inline-block mb-2">QUICK START</div>
+                <h4 className="text-lg font-bold mb-2">👨🏽‍💼 Code Reset Intro</h4>
+                <p className="text-2xl font-bold mb-4">KES 15,000</p>
+                <p className="mb-2"><span className="font-medium">Duration:</span> 4 weeks</p>
                 <ul className="list-disc pl-5 mb-6 space-y-1">
+                  <li>HTML/CSS/JS basics</li>
                   <li>2 live classes/week</li>
                   <li>Assignments</li>
-                  <li>Community support</li>
+                  <li>Git</li>
+                  <li>Community access</li>
                 </ul>
                 <Button className="w-full">Secure Your Spot</Button>
               </Card>
               
               <Card className="p-6 border-primary">
-                <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-medium inline-block mb-2">POPULAR</div>
-                <h4 className="text-lg font-bold mb-2">Code Reset Premium</h4>
-                <p className="text-2xl font-bold mb-4">KES 60,000</p>
-                <p className="mb-2"><span className="font-medium">Duration:</span> 8 weeks</p>
+                <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-medium inline-block mb-2">FULLSTACK MASTERY</div>
+                <h4 className="text-lg font-bold mb-2">🧱 Code Reset Core</h4>
+                <p className="text-2xl font-bold mb-4">KES 70,000 <span className="text-base font-normal">(or 15,000/month)</span></p>
+                <p className="mb-2"><span className="font-medium">Duration:</span> 5 months</p>
                 <ul className="list-disc pl-5 mb-6 space-y-1">
                   <li>2 live classes/week</li>
-                  <li>Assignments</li>
-                  <li>Community support</li>
-                  <li>3 personal mentorship calls</li>
-                  <li>CV/LinkedIn review</li>
-                  <li>Job prep</li>
-                </ul>
-                <Button className="w-full">Secure Your Spot</Button>
-              </Card>
-              
-              <Card className="p-6">
-                <h4 className="text-lg font-bold mb-2">1:1 Mentorship Plan</h4>
-                <p className="text-2xl font-bold mb-4">KES 25,000</p>
-                <p className="mb-2"><span className="font-medium">Duration:</span> 4 weeks</p>
-                <ul className="list-disc pl-5 mb-6 space-y-1">
-                  <li>Weekly private calls</li>
-                  <li>Personal guidance</li>
-                  <li>Customized roadmap</li>
+                  <li>1 full project/month (industry-grade)</li>
+                  <li>Assignments + code reviews</li>
+                  <li>Personal mentorship calls</li>
+                  <li>CV/LinkedIn reviews</li>
+                  <li>Mock interviews</li>
+                  <li>Deployment + GitHub coaching</li>
+                  <li>Access to private community, support, & feedback</li>
                 </ul>
                 <Button className="w-full">Secure Your Spot</Button>
               </Card>
@@ -256,49 +234,35 @@ const Mentorship = () => {
           
           <TabsContent value="aspiring" className="space-y-6">
             <div className="bg-muted p-4 rounded-lg mb-6">
-              <h3 className="text-xl font-semibold mb-2">🧠 Aspiring Developers (No Career Yet)</h3>
+              <h3 className="text-xl font-semibold mb-2">🧠 Aspiring Developers (18–25 Yrs)</h3>
               <p className="italic">For students, recent graduates, or unemployed youth starting from scratch.</p>
             </div>
             
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 gap-6">
               <Card className="p-6">
-                <h4 className="text-lg font-bold mb-2">Code Launchpad</h4>
-                <p className="text-2xl font-bold mb-4">KES 20,000</p>
-                <p className="mb-2"><span className="font-medium">Duration:</span> 6 weeks</p>
+                <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-medium inline-block mb-2">FOUNDATIONS</div>
+                <h4 className="text-lg font-bold mb-2">👨🏽‍🎓 Code Reset Intro</h4>
+                <p className="text-2xl font-bold mb-4">KES 12,000</p>
+                <p className="mb-2"><span className="font-medium">Duration:</span> 4 weeks</p>
                 <ul className="list-disc pl-5 mb-6 space-y-1">
-                  <li>HTML/CSS/JS fundamentals</li>
-                  <li>3 real projects</li>
-                  <li>GitHub setup</li>
+                  <li>Foundations of web dev (HTML/CSS/JS)</li>
+                  <li>Projects</li>
                   <li>Group support</li>
                 </ul>
                 <Button className="w-full">Secure Your Spot</Button>
               </Card>
               
               <Card className="p-6 border-primary">
-                <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-medium inline-block mb-2">RECOMMENDED</div>
-                <h4 className="text-lg font-bold mb-2">Code Launchpad+</h4>
-                <p className="text-2xl font-bold mb-4">KES 30,000</p>
-                <p className="mb-2"><span className="font-medium">Duration:</span> 6 weeks</p>
+                <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-medium inline-block mb-2">COMPREHENSIVE</div>
+                <h4 className="text-lg font-bold mb-2">💼 Code Reset Core</h4>
+                <p className="text-2xl font-bold mb-4">KES 60,000 <span className="text-base font-normal">(or 12,000/month)</span></p>
+                <p className="mb-2"><span className="font-medium">Duration:</span> 5 months</p>
                 <ul className="list-disc pl-5 mb-6 space-y-1">
-                  <li>HTML/CSS/JS fundamentals</li>
-                  <li>3 real projects</li>
-                  <li>GitHub setup</li>
-                  <li>Group support</li>
-                  <li>2 personal 1:1 calls</li>
-                  <li>Portfolio review</li>
-                  <li>Code feedback</li>
-                </ul>
-                <Button className="w-full">Secure Your Spot</Button>
-              </Card>
-              
-              <Card className="p-6">
-                <h4 className="text-lg font-bold mb-2">Starter Call</h4>
-                <p className="text-2xl font-bold mb-4">KES 2,000</p>
-                <p className="mb-2"><span className="font-medium">Duration:</span> 1 hour</p>
-                <ul className="list-disc pl-5 mb-6 space-y-1">
-                  <li>1-on-1 dev career planning</li>
-                  <li>Tools introduction</li>
-                  <li>Q&A session</li>
+                  <li>Projects</li>
+                  <li>Mentorship</li>
+                  <li>CV preparation</li>
+                  <li>Git training</li>
+                  <li>Portfolio development</li>
                 </ul>
                 <Button className="w-full">Secure Your Spot</Button>
               </Card>
@@ -311,46 +275,37 @@ const Mentorship = () => {
           
           <TabsContent value="kids" className="space-y-6">
             <div className="bg-muted p-4 rounded-lg mb-6">
-              <h3 className="text-xl font-semibold mb-2">👨‍👩‍👧 Kids (Ages 10–16)</h3>
+              <h3 className="text-xl font-semibold mb-2">👨‍👩‍👧 Kids & Teens (Ages 8–18)</h3>
               <p className="italic">For parents who want their kids to learn creative coding and digital skills.</p>
             </div>
             
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 gap-6">
               <Card className="p-6">
-                <h4 className="text-lg font-bold mb-2">CodePlay (Group)</h4>
-                <p className="text-2xl font-bold mb-4">KES 10,000</p>
+                <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-medium inline-block mb-2">WEEKLY CLASSES</div>
+                <h4 className="text-lg font-bold mb-2">🎮 CodePlay</h4>
+                <p className="text-2xl font-bold mb-4">KES 12,000</p>
                 <p className="mb-2"><span className="font-medium">Duration:</span> 6 weeks</p>
                 <ul className="list-disc pl-5 mb-6 space-y-1">
                   <li>1 class/week</li>
-                  <li>Scratch games & animations</li>
-                  <li>Fun projects</li>
+                  <li>Scratch, Code.org, Blockly</li>
+                  <li>Build games</li>
+                  <li>Logic training</li>
+                  <li>Animation</li>
+                  <li>Certificate included</li>
                 </ul>
                 <Button className="w-full">Secure Your Spot</Button>
               </Card>
               
               <Card className="p-6 border-primary">
-                <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-medium inline-block mb-2">POPULAR</div>
-                <h4 className="text-lg font-bold mb-2">CodePlay Premium</h4>
-                <p className="text-2xl font-bold mb-4">KES 18,000</p>
-                <p className="mb-2"><span className="font-medium">Duration:</span> 6 weeks</p>
-                <ul className="list-disc pl-5 mb-6 space-y-1">
-                  <li>1 class/week</li>
-                  <li>Scratch games & animations</li>
-                  <li>Fun projects</li>
-                  <li>15-min 1:1 weekly help</li>
-                  <li>Final project certificate</li>
-                </ul>
-                <Button className="w-full">Secure Your Spot</Button>
-              </Card>
-              
-              <Card className="p-6">
-                <h4 className="text-lg font-bold mb-2">Holiday Camp</h4>
-                <p className="text-2xl font-bold mb-4">KES 12,000</p>
+                <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-medium inline-block mb-2">INTENSIVE</div>
+                <h4 className="text-lg font-bold mb-2">🎉 Holiday Camp</h4>
+                <p className="text-2xl font-bold mb-4">KES 15,000</p>
                 <p className="mb-2"><span className="font-medium">Duration:</span> 2 weeks</p>
                 <ul className="list-disc pl-5 mb-6 space-y-1">
-                  <li>Daily 1hr classes</li>
-                  <li>Game/app project</li>
-                  <li>Parent showcase at end</li>
+                  <li>Daily 1hr sessions</li>
+                  <li>Build final game/app</li>
+                  <li>Showcase to parents</li>
+                  <li>Certificate + progress report</li>
                 </ul>
                 <Button className="w-full">Secure Your Spot</Button>
               </Card>
@@ -400,28 +355,33 @@ const Mentorship = () => {
             
             <div className="grid md:grid-cols-2 gap-6">
               <Card className="p-6">
-                <h4 className="text-lg font-bold mb-2">MVP Sprint</h4>
+                <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-medium inline-block mb-2">BASIC</div>
+                <h4 className="text-lg font-bold mb-2">🚀 MVP Sprint</h4>
                 <p className="text-2xl font-bold mb-4">KES 30,000</p>
                 <p className="mb-2"><span className="font-medium">Duration:</span> 4 weeks</p>
                 <ul className="list-disc pl-5 mb-6 space-y-1">
-                  <li>2 sessions/week</li>
-                  <li>Build working MVP</li>
-                  <li>Supabase/Firebase + frontend tools</li>
+                  <li>Validate idea with lean canvas</li>
+                  <li>Turn sketches into wireframes</li>
+                  <li>Build frontend (Webflow, React or HTML/CSS/Bootstrap)</li>
+                  <li>Connect backend using Supabase or Firebase</li>
+                  <li>Build contact forms, feedback systems, waitlists</li>
+                  <li>Deploy to Vercel/Netlify</li>
+                  <li>Strategy to collect feedback, track users and iterate</li>
                 </ul>
                 <Button className="w-full">Secure Your Spot</Button>
               </Card>
               
               <Card className="p-6 border-primary">
-                <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-medium inline-block mb-2">RECOMMENDED</div>
-                <h4 className="text-lg font-bold mb-2">MVP Sprint Premium</h4>
+                <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-medium inline-block mb-2">PREMIUM</div>
+                <h4 className="text-lg font-bold mb-2">🚀 MVP Sprint Premium</h4>
                 <p className="text-2xl font-bold mb-4">KES 50,000</p>
                 <p className="mb-2"><span className="font-medium">Duration:</span> 4 weeks</p>
                 <ul className="list-disc pl-5 mb-6 space-y-1">
-                  <li>2 sessions/week</li>
-                  <li>Build working MVP</li>
-                  <li>Supabase/Firebase + frontend tools</li>
-                  <li>2 personal coaching calls</li>
-                  <li>Feedback sessions</li>
+                  <li>All features from MVP Sprint</li>
+                  <li>2 personal coaching sessions</li>
+                  <li>Code and UX reviews</li>
+                  <li>Tool suggestions (Zapier, Notion, Typeform etc.)</li>
+                  <li>Go-to-market checklist</li>
                 </ul>
                 <Button className="w-full">Secure Your Spot</Button>
               </Card>
