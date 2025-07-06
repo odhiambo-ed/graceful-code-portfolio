@@ -14,7 +14,8 @@ import {
   Mail,
   Menu,
   BarChart3,
-  X
+  X,
+  Lightbulb
 } from 'lucide-react';
 import { FaGithub, FaLinkedin, FaGitlab } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -64,6 +65,7 @@ export default function CollapsibleSidebar({ setSheetOpen }: Props) {
       text: "Projects",
     },
     { href: "/resume", icon: <FileText size={20} />, text: "Resume" },
+    { href: "/mentorship", icon: <GraduationCap size={20} />, text: "Mentorship" },
   ];
 
   const socialLinks = [

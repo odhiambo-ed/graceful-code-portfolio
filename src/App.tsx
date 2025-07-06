@@ -15,6 +15,7 @@ import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import ComingSoon from "./pages/ComingSoon";
 import HireMe from "./pages/HireMe";
+import Mentorship from "./pages/Mentorship";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -36,6 +37,7 @@ const App = () => (
                   <Route path="/resume" element={<Resume />} />
                   <Route path="/coming-soon" element={<ComingSoon />} />
                   <Route path="/hire-me" element={<HireMe />} />
+                  <Route path="/mentorship" element={<Mentorship />} />
                   <Route path="*" element={<NotFound />} />
                 </Routes>
               </AnimatePresence>
