@@ -31,7 +31,7 @@ const Bio = () => {
           Looking to break into tech, level up your code, or introduce your child to coding? I offer personalized, hands‑on mentorship for career switchers, beginners, and kids—taught by a senior dev with real industry experience.
         </p>
         <Link 
-          to="#mentorship" 
+          to="mentorship" 
           className="inline-flex items-center gap-2 mt-4 px-6 py-2 bg-primary text-primary-foreground rounded-md font-medium hover:bg-primary/90 transition-colors"
         >
           Explore Programs <ArrowRight size={16} />
