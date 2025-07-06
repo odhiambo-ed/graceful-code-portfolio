@@ -162,15 +162,10 @@ const Mentorship = () => {
                     <td className="p-3">10,000</td>
                   </tr>
                   <tr className="border-b border-border">
-                    <td className="p-3" rowSpan={2}>Startup Founders</td>
+                    <td className="p-3" rowSpan={1}>Startup Founders</td>
                     <td className="p-3">MVP Sprint</td>
                     <td className="p-3">4 weeks</td>
-                    <td className="p-3">30,000</td>
-                  </tr>
-                  <tr className="border-b border-border">
-                    <td className="p-3">MVP Sprint Premium</td>
-                    <td className="p-3">4 weeks</td>
-                    <td className="p-3">50,000</td>
+                    <td className="p-3">30,000 <span className="line-through text-muted-foreground">50,000</span></td>
                   </tr>
                 </tbody>
               </table>
@@ -196,7 +191,7 @@ const Mentorship = () => {
               <Card className="p-6">
                 <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-medium inline-block mb-2">QUICK START</div>
                 <h4 className="text-lg font-bold mb-2">👨🏽‍💼 Code Reset Intro</h4>
-                <p className="text-2xl font-bold mb-4">KES 10,000</p>
+                <p className="text-2xl font-bold mb-4">KES 10,000 <span className="text-base font-normal line-through text-muted-foreground">15,000</span></p>
                 <p className="mb-2"><span className="font-medium">Duration:</span> 4 weeks</p>
                 <ul className="list-disc pl-5 mb-6 space-y-1">
                   <li>HTML/CSS/JS basics</li>
@@ -205,13 +200,19 @@ const Mentorship = () => {
                   <li>Git</li>
                   <li>Community access</li>
                 </ul>
-                <Button className="w-full">Secure Your Spot</Button>
+                <div className="grid grid-cols-2 gap-2">
+                  <Button variant="outline" className="w-full" onClick={() => {
+                    // @ts-expect-error - Calendly is loaded globally
+                    window.Calendly?.showPopupWidget('https://calendly.com/odhiamboedward-ouma/30min');
+                  }}>Book Demo</Button>
+                  <Button className="w-full">Secure Your Spot</Button>
+                </div>
               </Card>
               
               <Card className="p-6 border-primary">
                 <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-medium inline-block mb-2">FULLSTACK MASTERY</div>
                 <h4 className="text-lg font-bold mb-2">🧱 Code Reset Core</h4>
-                <p className="text-2xl font-bold mb-4">KES 50,000 <span className="text-base font-normal">(or 12,000/month)</span></p>
+                <p className="text-2xl font-bold mb-4">KES 50,000 <span className="text-base font-normal line-through text-muted-foreground">70,000</span> <span className="text-base font-normal">(or 12,000/month)</span></p>
                 <p className="mb-2"><span className="font-medium">Duration:</span> 5 months</p>
                 <ul className="list-disc pl-5 mb-6 space-y-1">
                   <li>2 live classes/week</li>
@@ -223,7 +224,13 @@ const Mentorship = () => {
                   <li>Deployment + GitHub coaching</li>
                   <li>Access to private community, support, & feedback</li>
                 </ul>
-                <Button className="w-full">Secure Your Spot</Button>
+                <div className="grid grid-cols-2 gap-2">
+                  <Button variant="outline" className="w-full" onClick={() => {
+                    // @ts-expect-error - Calendly is loaded globally
+                    window.Calendly?.showPopupWidget('https://calendly.com/odhiamboedward-ouma/30min');
+                  }}>Book Demo</Button>
+                  <Button className="w-full">Secure Your Spot</Button>
+                </div>
               </Card>
             </div>
             
@@ -242,20 +249,26 @@ const Mentorship = () => {
               <Card className="p-6">
                 <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-medium inline-block mb-2">FOUNDATIONS</div>
                 <h4 className="text-lg font-bold mb-2">👨🏽‍🎓 Code Reset Intro</h4>
-                <p className="text-2xl font-bold mb-4">KES 10,000</p>
+                <p className="text-2xl font-bold mb-4">KES 10,000 <span className="text-base font-normal line-through text-muted-foreground">12,000</span></p>
                 <p className="mb-2"><span className="font-medium">Duration:</span> 4 weeks</p>
                 <ul className="list-disc pl-5 mb-6 space-y-1">
                   <li>Foundations of web dev (HTML/CSS/JS)</li>
                   <li>Projects</li>
                   <li>Group support</li>
                 </ul>
-                <Button className="w-full">Secure Your Spot</Button>
+                <div className="grid grid-cols-2 gap-2">
+                  <Button variant="outline" className="w-full" onClick={() => {
+                    // @ts-expect-error - Calendly is loaded globally
+                    window.Calendly?.showPopupWidget('https://calendly.com/odhiamboedward-ouma/30min');
+                  }}>Book Demo</Button>
+                  <Button className="w-full">Secure Your Spot</Button>
+                </div>
               </Card>
               
               <Card className="p-6 border-primary">
                 <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-medium inline-block mb-2">COMPREHENSIVE</div>
                 <h4 className="text-lg font-bold mb-2">💼 Code Reset Core</h4>
-                <p className="text-2xl font-bold mb-4">KES 50,000 <span className="text-base font-normal">(or 12,000/month)</span></p>
+                <p className="text-2xl font-bold mb-4">KES 50,000 <span className="text-base font-normal line-through text-muted-foreground">60,000</span> <span className="text-base font-normal">(or 12,000/month)</span></p>
                 <p className="mb-2"><span className="font-medium">Duration:</span> 5 months</p>
                 <ul className="list-disc pl-5 mb-6 space-y-1">
                   <li>Projects</li>
@@ -264,7 +277,13 @@ const Mentorship = () => {
                   <li>Git training</li>
                   <li>Portfolio development</li>
                 </ul>
-                <Button className="w-full">Secure Your Spot</Button>
+                <div className="grid grid-cols-2 gap-2">
+                  <Button variant="outline" className="w-full" onClick={() => {
+                    // @ts-expect-error - Calendly is loaded globally
+                    window.Calendly?.showPopupWidget('https://calendly.com/odhiamboedward-ouma/30min');
+                  }}>Book Demo</Button>
+                  <Button className="w-full">Secure Your Spot</Button>
+                </div>
               </Card>
             </div>
             
@@ -283,8 +302,8 @@ const Mentorship = () => {
               <Card className="p-6">
                 <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-medium inline-block mb-2">WEEKLY CLASSES</div>
                 <h4 className="text-lg font-bold mb-2">🎮 CodePlay</h4>
-                <p className="text-2xl font-bold mb-4">KES 4,000</p>
-                <p className="mb-2"><span className="font-medium">Duration:</span> 6 weeks</p>
+                <p className="text-2xl font-bold mb-4">KES 4,000 <span className="text-base font-normal line-through text-muted-foreground">12,000</span></p>
+                <p className="mb-2"><span className="font-medium">Duration:</span> 4 weeks</p>
                 <ul className="list-disc pl-5 mb-6 space-y-1">
                   <li>1 class/week</li>
                   <li>Scratch, Code.org, Blockly</li>
@@ -293,13 +312,19 @@ const Mentorship = () => {
                   <li>Animation</li>
                   <li>Certificate included</li>
                 </ul>
-                <Button className="w-full">Secure Your Spot</Button>
+                <div className="grid grid-cols-2 gap-2">
+                  <Button variant="outline" className="w-full" onClick={() => {
+                    // @ts-expect-error - Calendly is loaded globally
+                    window.Calendly?.showPopupWidget('https://calendly.com/odhiamboedward-ouma/30min');
+                  }}>Book Demo</Button>
+                  <Button className="w-full">Secure Your Spot</Button>
+                </div>
               </Card>
               
               <Card className="p-6 border-primary">
                 <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-medium inline-block mb-2">INTENSIVE</div>
                 <h4 className="text-lg font-bold mb-2">🎉 Holiday Camp</h4>
-                <p className="text-2xl font-bold mb-4">KES 6,000</p>
+                <p className="text-2xl font-bold mb-4">KES 6,000 <span className="text-base font-normal line-through text-muted-foreground">15,000</span></p>
                 <p className="mb-2"><span className="font-medium">Duration:</span> 2 weeks</p>
                 <ul className="list-disc pl-5 mb-6 space-y-1">
                   <li>Daily 1hr sessions</li>
@@ -307,7 +332,13 @@ const Mentorship = () => {
                   <li>Showcase to parents</li>
                   <li>Certificate + progress report</li>
                 </ul>
-                <Button className="w-full">Secure Your Spot</Button>
+                <div className="grid grid-cols-2 gap-2">
+                  <Button variant="outline" className="w-full" onClick={() => {
+                    // @ts-expect-error - Calendly is loaded globally
+                    window.Calendly?.showPopupWidget('https://calendly.com/odhiamboedward-ouma/30min');
+                  }}>Book Demo</Button>
+                  <Button className="w-full">Secure Your Spot</Button>
+                </div>
               </Card>
             </div>
             
@@ -326,7 +357,7 @@ const Mentorship = () => {
               <Card className="p-6 border-primary">
                 <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-medium inline-block mb-2">INDUSTRY REFRESHER</div>
                 <h4 className="text-lg font-bold mb-2">Code Reset Pro</h4>
-                <p className="text-2xl font-bold mb-4">KES 10,000/month</p>
+                <p className="text-2xl font-bold mb-4">KES 10,000/month <span className="text-base font-normal line-through text-muted-foreground">15,000/month</span></p>
                 <p className="mb-2"><span className="font-medium">Duration:</span> Monthly (1 mo = 1 project)</p>
                 <ul className="list-disc pl-5 mb-6 space-y-1">
                   <li>1 senior-level project/month (e.g. dashboard, ecommerce, SaaS, CRUD app)</li>
@@ -338,7 +369,13 @@ const Mentorship = () => {
                   <li>Dev tools, performance tips</li>
                 </ul>
                 <p className="text-sm mb-4">Can be taken for 1, 2, or 3 months depending on your career goals</p>
-                <Button className="w-full">Secure Your Spot</Button>
+                <div className="grid grid-cols-2 gap-2">
+                  <Button variant="outline" className="w-full" onClick={() => {
+                    // @ts-expect-error - Calendly is loaded globally
+                    window.Calendly?.showPopupWidget('https://calendly.com/odhiamboedward-ouma/30min');
+                  }}>Book Demo</Button>
+                  <Button className="w-full">Secure Your Spot</Button>
+                </div>
               </Card>
             </div>
             
@@ -353,11 +390,11 @@ const Mentorship = () => {
               <p className="italic">For people with startup ideas who want to learn how to build and launch a simple MVP.</p>
             </div>
             
-            <div className="grid md:grid-cols-2 gap-6">
-              <Card className="p-6">
-                <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-medium inline-block mb-2">BASIC</div>
-                <h4 className="text-lg font-bold mb-2">🚀 MVP Sprint</h4>
-                <p className="text-2xl font-bold mb-4">KES 30,000</p>
+            <div className="grid md:grid-cols-1 max-w-xl mx-auto gap-6">
+              <Card className="p-6 border-primary">
+                <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-medium inline-block mb-2">COMPREHENSIVE MVP PACKAGE</div>
+                <h4 className="text-lg font-bold mb-2">🚀 MVP Sprint Complete</h4>
+                <p className="text-2xl font-bold mb-4">KES 30,000 <span className="text-base font-normal line-through text-muted-foreground">50,000</span></p>
                 <p className="mb-2"><span className="font-medium">Duration:</span> 4 weeks</p>
                 <ul className="list-disc pl-5 mb-6 space-y-1">
                   <li>Validate idea with lean canvas</li>
@@ -367,23 +404,18 @@ const Mentorship = () => {
                   <li>Build contact forms, feedback systems, waitlists</li>
                   <li>Deploy to Vercel/Netlify</li>
                   <li>Strategy to collect feedback, track users and iterate</li>
-                </ul>
-                <Button className="w-full">Secure Your Spot</Button>
-              </Card>
-              
-              <Card className="p-6 border-primary">
-                <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-medium inline-block mb-2">PREMIUM</div>
-                <h4 className="text-lg font-bold mb-2">🚀 MVP Sprint Premium</h4>
-                <p className="text-2xl font-bold mb-4">KES 50,000</p>
-                <p className="mb-2"><span className="font-medium">Duration:</span> 4 weeks</p>
-                <ul className="list-disc pl-5 mb-6 space-y-1">
-                  <li>All features from MVP Sprint</li>
                   <li>2 personal coaching sessions</li>
                   <li>Code and UX reviews</li>
                   <li>Tool suggestions (Zapier, Notion, Typeform etc.)</li>
                   <li>Go-to-market checklist</li>
                 </ul>
-                <Button className="w-full">Secure Your Spot</Button>
+                <div className="grid grid-cols-2 gap-2">
+                  <Button variant="outline" className="w-full" onClick={() => {
+                    // @ts-expect-error - Calendly is loaded globally
+                    window.Calendly?.showPopupWidget('https://calendly.com/odhiamboedward-ouma/30min');
+                  }}>Book Demo</Button>
+                  <Button className="w-full">Secure Your Spot</Button>
+                </div>
               </Card>
             </div>
             
