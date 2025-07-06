@@ -97,6 +97,14 @@ const Bio = () => {
                   <h4 className="font-medium">Program: CodePlay</h4>
                 </div>
               </div>
+              
+              <div className="bg-card rounded-lg p-6 shadow-md">
+                <h3 className="text-xl font-semibold mb-2">Bootcamp Grads / Junior Devs</h3>
+                <p className="text-muted-foreground mb-4">For bootcamp graduates, juniors feeling stuck, or devs looking to rebuild their portfolio with real projects.</p>
+                <div className="bg-accent/10 p-4 rounded-md">
+                  <h4 className="font-medium">Program: Code Reset Pro</h4>
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>

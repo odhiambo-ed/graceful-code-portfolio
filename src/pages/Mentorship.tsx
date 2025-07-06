@@ -97,10 +97,11 @@ const Mentorship = () => {
         <h2 className="text-2xl font-bold mb-6 text-center">Ed-CodeLift Mentorship & Training Packages</h2>
         
         <Tabs defaultValue="all" className="w-full">
-          <TabsList className="grid grid-cols-5 mb-8">
+          <TabsList className="grid grid-cols-6 mb-8">
             <TabsTrigger value="all">All Programs</TabsTrigger>
             <TabsTrigger value="career">Career Switchers</TabsTrigger>
             <TabsTrigger value="aspiring">Aspiring Devs</TabsTrigger>
+            <TabsTrigger value="bootcamp">Bootcamp Grads</TabsTrigger>
             <TabsTrigger value="kids">Kids</TabsTrigger>
             <TabsTrigger value="startup">Startup Founders</TabsTrigger>
           </TabsList>
@@ -169,6 +170,12 @@ const Mentorship = () => {
                     <td className="p-3">12,000</td>
                   </tr>
                   
+                  <tr className="border-b border-border">
+                    <td className="p-3" rowSpan={1}>Bootcamp Grads / Junior Devs</td>
+                    <td className="p-3">Code Reset Pro</td>
+                    <td className="p-3">Monthly</td>
+                    <td className="p-3">15,000</td>
+                  </tr>
                   <tr className="border-b border-border">
                     <td className="p-3" rowSpan={2}>Startup Founders</td>
                     <td className="p-3">MVP Sprint</td>
@@ -345,6 +352,37 @@ const Mentorship = () => {
                   <li>Game/app project</li>
                   <li>Parent showcase at end</li>
                 </ul>
+                <Button className="w-full">Secure Your Spot</Button>
+              </Card>
+            </div>
+            
+            <p className="text-center text-sm mt-4">
+              I teach all sessions personally, limited to small groups for maximum learning.
+            </p>
+          </TabsContent>
+          
+          <TabsContent value="bootcamp" className="space-y-6">
+            <div className="bg-muted p-4 rounded-lg mb-6">
+              <h3 className="text-xl font-semibold mb-2">🧑🏾‍💻 Bootcamp Grads / Junior Devs – Refresher Track</h3>
+              <p className="italic">For bootcamp graduates, juniors stuck or overwhelmed, or devs looking to rebuild their portfolio with real projects.</p>
+            </div>
+            
+            <div className="grid md:grid-cols-1 gap-6">
+              <Card className="p-6 border-primary">
+                <div className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-medium inline-block mb-2">INDUSTRY REFRESHER</div>
+                <h4 className="text-lg font-bold mb-2">Code Reset Pro</h4>
+                <p className="text-2xl font-bold mb-4">KES 15,000/month</p>
+                <p className="mb-2"><span className="font-medium">Duration:</span> Monthly (1 mo = 1 project)</p>
+                <ul className="list-disc pl-5 mb-6 space-y-1">
+                  <li>1 senior-level project/month (e.g. dashboard, ecommerce, SaaS, CRUD app)</li>
+                  <li>Weekly code walkthroughs</li>
+                  <li>GitHub workflow practice</li>
+                  <li>Design to code (Figma → App)</li>
+                  <li>Group feedback, mentorship call</li>
+                  <li>Deploy and present project</li>
+                  <li>Dev tools, performance tips</li>
+                </ul>
+                <p className="text-sm mb-4">Can be taken for 1, 2, or 3 months depending on your career goals</p>
                 <Button className="w-full">Secure Your Spot</Button>
               </Card>
             </div>
