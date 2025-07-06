@@ -1,10 +1,26 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import EnrollmentModal, { ProgramDetails } from '@/components/mentorship/EnrollmentModal';
 
 const Mentorship = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedProgram, setSelectedProgram] = useState<ProgramDetails>({
+    name: '',
+    price: '',
+    duration: ''
+  });
+  
+  const handleSecureSpot = (programName: string, price: string, duration: string) => {
+    setSelectedProgram({
+      name: programName,
+      price: price,
+      duration: duration
+    });
+    setIsModalOpen(true);
+  };
   // Load Calendly scripts and styles
   useEffect(() => {
     // Add Calendly CSS
@@ -40,7 +56,13 @@ const Mentorship = () => {
     };
   }, []);
   return (
-    <div className="container mx-auto px-4 py-10">
+    <>
+      <EnrollmentModal 
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        programDetails={selectedProgram}
+      />
+      <div className="container mx-auto px-4 py-10">
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -205,7 +227,7 @@ const Mentorship = () => {
                     // @ts-expect-error - Calendly is loaded globally
                     window.Calendly?.showPopupWidget('https://calendly.com/odhiamboedward-ouma/30min');
                   }}>Book Demo</Button>
-                  <Button className="w-full">Secure Your Spot</Button>
+                  <Button className="w-full" onClick={() => handleSecureSpot('Code Reset Intro', 'KES 10,000', '4 weeks')}>Secure Your Spot</Button>
                 </div>
               </Card>
               
@@ -229,7 +251,7 @@ const Mentorship = () => {
                     // @ts-expect-error - Calendly is loaded globally
                     window.Calendly?.showPopupWidget('https://calendly.com/odhiamboedward-ouma/30min');
                   }}>Book Demo</Button>
-                  <Button className="w-full">Secure Your Spot</Button>
+                  <Button className="w-full" onClick={() => handleSecureSpot('Code Reset Core', 'KES 50,000 (or 12,000/month)', '5 months')}>Secure Your Spot</Button>
                 </div>
               </Card>
             </div>
@@ -261,7 +283,7 @@ const Mentorship = () => {
                     // @ts-expect-error - Calendly is loaded globally
                     window.Calendly?.showPopupWidget('https://calendly.com/odhiamboedward-ouma/30min');
                   }}>Book Demo</Button>
-                  <Button className="w-full">Secure Your Spot</Button>
+                  <Button className="w-full" onClick={() => handleSecureSpot('Code Reset Intro', 'KES 10,000', '4 weeks')}>Secure Your Spot</Button>
                 </div>
               </Card>
               
@@ -282,7 +304,7 @@ const Mentorship = () => {
                     // @ts-expect-error - Calendly is loaded globally
                     window.Calendly?.showPopupWidget('https://calendly.com/odhiamboedward-ouma/30min');
                   }}>Book Demo</Button>
-                  <Button className="w-full">Secure Your Spot</Button>
+                  <Button className="w-full" onClick={() => handleSecureSpot('Code Reset Core', 'KES 50,000 (or 12,000/month)', '5 months')}>Secure Your Spot</Button>
                 </div>
               </Card>
             </div>
@@ -317,7 +339,7 @@ const Mentorship = () => {
                     // @ts-expect-error - Calendly is loaded globally
                     window.Calendly?.showPopupWidget('https://calendly.com/odhiamboedward-ouma/30min');
                   }}>Book Demo</Button>
-                  <Button className="w-full">Secure Your Spot</Button>
+                  <Button className="w-full" onClick={() => handleSecureSpot('CodePlay', 'KES 4,000', '4 weeks')}>Secure Your Spot</Button>
                 </div>
               </Card>
               
@@ -337,7 +359,7 @@ const Mentorship = () => {
                     // @ts-expect-error - Calendly is loaded globally
                     window.Calendly?.showPopupWidget('https://calendly.com/odhiamboedward-ouma/30min');
                   }}>Book Demo</Button>
-                  <Button className="w-full">Secure Your Spot</Button>
+                  <Button className="w-full" onClick={() => handleSecureSpot('Holiday Camp', 'KES 6,000', '2 weeks')}>Secure Your Spot</Button>
                 </div>
               </Card>
             </div>
@@ -374,7 +396,7 @@ const Mentorship = () => {
                     // @ts-expect-error - Calendly is loaded globally
                     window.Calendly?.showPopupWidget('https://calendly.com/odhiamboedward-ouma/30min');
                   }}>Book Demo</Button>
-                  <Button className="w-full">Secure Your Spot</Button>
+                  <Button className="w-full" onClick={() => handleSecureSpot('Code Reset Pro', 'KES 10,000/month', 'Monthly (1 mo = 1 project)')}>Secure Your Spot</Button>
                 </div>
               </Card>
             </div>
@@ -414,7 +436,7 @@ const Mentorship = () => {
                     // @ts-expect-error - Calendly is loaded globally
                     window.Calendly?.showPopupWidget('https://calendly.com/odhiamboedward-ouma/30min');
                   }}>Book Demo</Button>
-                  <Button className="w-full">Secure Your Spot</Button>
+                  <Button className="w-full" onClick={() => handleSecureSpot('MVP Sprint Complete', 'KES 30,000', '4 weeks')}>Secure Your Spot</Button>
                 </div>
               </Card>
             </div>
@@ -557,6 +579,7 @@ const Mentorship = () => {
         </Button>
       </motion.div>
     </div>
+    </>
   );
 };
 
