@@ -5,14 +5,35 @@ import { Card } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const Mentorship = () => {
-  // Load Calendly script
+  // Load Calendly scripts and styles
   useEffect(() => {
+    // Add Calendly CSS
+    const link = document.createElement('link');
+    link.href = 'https://assets.calendly.com/assets/external/widget.css';
+    link.rel = 'stylesheet';
+    document.head.appendChild(link);
+    
+    // Add Calendly JS
     const script = document.createElement('script');
     script.src = 'https://assets.calendly.com/assets/external/widget.js';
     script.async = true;
     document.body.appendChild(script);
     
+    // Initialize the badge widget once the script is loaded
+    script.onload = () => {
+      // @ts-expect-error - Calendly is loaded globally
+      window.Calendly?.initBadgeWidget({
+        url: 'https://calendly.com/odhiamboedward-ouma/30min',
+        text: 'Schedule time with me',
+        color: '#0069ff',
+        textColor: '#ffffff'
+      });
+    };
+    
     return () => {
+      if (document.head.contains(link)) {
+        document.head.removeChild(link);
+      }
       if (document.body.contains(script)) {
         document.body.removeChild(script);
       }
@@ -375,18 +396,28 @@ const Mentorship = () => {
         </Tabs>
       </motion.div>
 
-      {/* Calendly Booking Widget */}
+      {/* Booking CTA Section */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.4 }}
-        className="mt-16 mb-8"
+        className="mt-16 mb-8 text-center"
       >
-        <h2 className="text-2xl font-bold mb-6 text-center">Book Your Ed-CodeLift Session</h2>
+        <h2 className="text-2xl font-bold mb-6 text-center">Ready to Start Your Ed-CodeLift Journey?</h2>
         <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
-          Ready to start your coding journey? Schedule a consultation call to discuss which Ed-CodeLift program is right for you.
+          Click the scheduling button that appears at the bottom-right of this page to book a free consultation call.
+          We'll discuss which Ed-CodeLift program is the perfect fit for your goals and learning style.
         </p>
-        <div className="calendly-inline-widget" data-url="https://calendly.com/odhiamboedward-ouma/30min" style={{ minWidth: "320px", height: "700px" }}></div>
+        <Button 
+          size="lg" 
+          className="bg-primary text-primary-foreground hover:bg-primary/90"
+          onClick={() => {
+            // @ts-expect-error - Calendly is loaded globally
+            window.Calendly?.showPopupWidget('https://calendly.com/odhiamboedward-ouma/30min');
+          }}
+        >
+          Schedule Your Call Now
+        </Button>
       </motion.div>
     </div>
   );
