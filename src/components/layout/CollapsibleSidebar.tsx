@@ -59,27 +59,11 @@ export default function CollapsibleSidebar({ setSheetOpen }: Props) {
     { href: "/", icon: <Home size={20} />, text: "Bio" },
     { href: "/dev-stats", icon: <BarChart3 size={20} />, text: "Dev Stats" },
     {
-      href: "/hobby-projects",
+      href: "/projects",
       icon: <Briefcase size={20} />,
-      text: "Hobby Projects",
-    },
-    {
-      href: "/work-projects",
-      icon: <Briefcase size={20} />,
-      text: "Work Projects",
+      text: "Projects",
     },
     { href: "/resume", icon: <FileText size={20} />, text: "Resume" },
-    {
-      href: "/products",
-      icon: <ShoppingBag size={20} />,
-      text: "Products",
-    },
-    { href: "/free-courses", icon: <Book size={20} />, text: "Free Courses" },
-    {
-      href: "/premium-courses",
-      icon: <GraduationCap size={20} />,
-      text: "Premium Courses",
-    },
   ];
 
   const socialLinks = [
