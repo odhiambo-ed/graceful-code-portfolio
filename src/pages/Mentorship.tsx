@@ -1,9 +1,23 @@
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const Mentorship = () => {
+  // Load Calendly script
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://assets.calendly.com/assets/external/widget.js';
+    script.async = true;
+    document.body.appendChild(script);
+    
+    return () => {
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
+    };
+  }, []);
   return (
     <div className="container mx-auto px-4 py-10">
       <motion.h1
@@ -12,7 +26,7 @@ const Mentorship = () => {
         transition={{ duration: 0.5 }}
         className="text-3xl font-bold mb-4 text-center"
       >
-        Mentorship Programs
+        Ed-CodeLift Mentorship Programs
       </motion.h1>
       
       <motion.p
@@ -59,7 +73,7 @@ const Mentorship = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
       >
-        <h2 className="text-2xl font-bold mb-6 text-center">Mentorship & Training Packages</h2>
+        <h2 className="text-2xl font-bold mb-6 text-center">Ed-CodeLift Mentorship & Training Packages</h2>
         
         <Tabs defaultValue="all" className="w-full">
           <TabsList className="grid grid-cols-5 mb-8">
@@ -359,6 +373,20 @@ const Mentorship = () => {
             </p>
           </TabsContent>
         </Tabs>
+      </motion.div>
+
+      {/* Calendly Booking Widget */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
+        className="mt-16 mb-8"
+      >
+        <h2 className="text-2xl font-bold mb-6 text-center">Book Your Ed-CodeLift Session</h2>
+        <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
+          Ready to start your coding journey? Schedule a consultation call to discuss which Ed-CodeLift program is right for you.
+        </p>
+        <div className="calendly-inline-widget" data-url="https://calendly.com/odhiamboedward-ouma/30min" style={{ minWidth: "320px", height: "700px" }}></div>
       </motion.div>
     </div>
   );
