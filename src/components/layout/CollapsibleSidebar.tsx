@@ -99,7 +99,7 @@ export default function CollapsibleSidebar({ setSheetOpen }: Props) {
 
   return (
     <motion.aside 
-      className="h-screen bg-sidebar flex flex-col border-r border-sidebar-border"
+      className="h-screen bg-sidebar flex flex-col border-r border-sidebar-border sticky top-0 left-0"
       initial={{ width: isMobile ? '100%' : 240 }}
       animate={{ width: isCollapsed && !isMobile ? 70 : isMobile ? '100%' : 240 }}
       transition={{ duration: 0.3 }}
