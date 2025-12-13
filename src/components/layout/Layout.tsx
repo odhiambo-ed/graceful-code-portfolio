@@ -1,11 +1,10 @@
-
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { Menu } from 'lucide-react';
-import CollapsibleSidebar from './CollapsibleSidebar';
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { Menu } from "lucide-react";
+import CollapsibleSidebar from "./CollapsibleSidebar";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { useIsMobile } from '@/hooks/use-mobile';
+import { useIsMobile } from "@/hooks/use-mobile";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -16,7 +15,7 @@ export default function Layout({ children }: LayoutProps) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="flex min-h-screen">
+    <div className="flex h-svh overflow-hidden">
       {isMobile ? (
         <>
           <Sheet open={open} onOpenChange={setOpen}>
@@ -29,7 +28,7 @@ export default function Layout({ children }: LayoutProps) {
               <CollapsibleSidebar setSheetOpen={setOpen} />
             </SheetContent>
           </Sheet>
-          <main className="flex-1 p-4 md:p-6 overflow-y-auto w-full">
+          <main className="flex-1 p-4 md:p-6 overflow-y-auto w-full h-svh">
             <motion.div
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
@@ -43,7 +42,7 @@ export default function Layout({ children }: LayoutProps) {
       ) : (
         <>
           <CollapsibleSidebar />
-          <main className="flex-1 p-4 md:p-6 overflow-y-auto">
+          <main className="flex-1 p-4 md:p-6 overflow-y-auto h-svh">
             <motion.div
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}

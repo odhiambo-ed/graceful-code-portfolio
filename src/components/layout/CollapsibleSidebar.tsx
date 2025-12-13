@@ -1,28 +1,26 @@
-
 "use client";
-import { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { 
-  Home, 
-  User, 
-  Briefcase, 
-  FileText, 
-  ShoppingBag, 
-  Book, 
+import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
+import {
+  Home,
+  User,
+  Briefcase,
+  FileText,
+  ShoppingBag,
+  Book,
   GraduationCap,
   Mail,
   Menu,
   BarChart3,
   X,
-  Lightbulb
-} from 'lucide-react';
+} from "lucide-react";
 import { FaGithub, FaLinkedin, FaGitlab } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import ThemeToggle from './ThemeToggle';
-import { useIsMobile } from '@/hooks/use-mobile';
-import { Button } from '@/components/ui/button';
+import ThemeToggle from "./ThemeToggle";
+import { useIsMobile } from "@/hooks/use-mobile";
+import { Button } from "@/components/ui/button";
 
 interface NavItemProps {
   href: string;
@@ -33,9 +31,20 @@ interface NavItemProps {
   onClick?: () => void;
 }
 
-const NavItem = ({ href, icon, text, isCollapsed, isActive, onClick }: NavItemProps) => {
+const NavItem = ({
+  href,
+  icon,
+  text,
+  isCollapsed,
+  isActive,
+  onClick,
+}: NavItemProps) => {
   return (
-    <Link to={href} className={`sidebar-link ${isActive ? 'active' : ''}`} onClick={onClick}>
+    <Link
+      to={href}
+      className={`sidebar-link ${isActive ? "active" : ""}`}
+      onClick={onClick}
+    >
       <span>{icon}</span>
       {!isCollapsed && <span>{text}</span>}
     </Link>
@@ -51,11 +60,11 @@ export default function CollapsibleSidebar({ setSheetOpen }: Props) {
   const location = useLocation();
   const pathname = location.pathname;
   const isMobile = useIsMobile();
-  
+
   const toggleSidebar = () => {
     setIsCollapsed(!isCollapsed);
   };
-  
+
   const navItems = [
     { href: "/", icon: <Home size={20} />, text: "Bio" },
     { href: "/dev-stats", icon: <BarChart3 size={20} />, text: "Dev Stats" },
@@ -98,18 +107,20 @@ export default function CollapsibleSidebar({ setSheetOpen }: Props) {
   };
 
   return (
-    <motion.aside 
-      className="h-screen bg-sidebar flex flex-col border-r border-sidebar-border sticky top-0 left-0"
-      initial={{ width: isMobile ? '100%' : 240 }}
-      animate={{ width: isCollapsed && !isMobile ? 70 : isMobile ? '100%' : 240 }}
+    <motion.aside
+      className="sticky top-0 h-svh flex-shrink-0 bg-sidebar flex flex-col border-r border-sidebar-border"
+      initial={{ width: isMobile ? "100%" : 240 }}
+      animate={{
+        width: isCollapsed && !isMobile ? 70 : isMobile ? "100%" : 240,
+      }}
       transition={{ duration: 0.3 }}
     >
       <div className="flex items-center justify-between p-4">
         {isMobile && setSheetOpen ? (
-          <Button 
-            variant="ghost" 
-            size="icon" 
-            className="ml-auto" 
+          <Button
+            variant="ghost"
+            size="icon"
+            className="ml-auto"
             onClick={() => setSheetOpen(false)}
             aria-label="Close menu"
           >
@@ -127,22 +138,28 @@ export default function CollapsibleSidebar({ setSheetOpen }: Props) {
       </div>
 
       <div className="flex flex-col items-center px-3 py-4">
-        <Avatar className={`${isCollapsed ? 'h-12 w-12' : 'h-24 w-24'} mb-3 border-2 border-primary`}>
+        <Avatar
+          className={`${
+            isCollapsed ? "h-12 w-12" : "h-24 w-24"
+          } mb-3 border-2 border-primary`}
+        >
           <AvatarImage src="/images/edward.jpeg" alt="Edward Odhiambo" />
           <AvatarFallback>EO</AvatarFallback>
         </Avatar>
-        
+
         {!isCollapsed && (
-          <h1 className="font-bold text-xl text-gradient mb-3">Edward Odhiambo</h1>
+          <h1 className="font-bold text-xl text-gradient mb-3">
+            Edward Odhiambo
+          </h1>
         )}
-        
+
         {!isCollapsed && (
           <div className="flex justify-center gap-4 mb-6">
             {socialLinks.map((link) => (
-              <a 
-                key={link.href} 
-                href={link.href} 
-                target="_blank" 
+              <a
+                key={link.href}
+                href={link.href}
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-sidebar-foreground hover:text-primary transition-colors"
                 aria-label={link.text}
@@ -153,7 +170,7 @@ export default function CollapsibleSidebar({ setSheetOpen }: Props) {
           </div>
         )}
       </div>
-      
+
       <div className="flex-1 overflow-y-auto px-3">
         <nav className="space-y-2">
           {navItems.map((item) => (
@@ -168,21 +185,21 @@ export default function CollapsibleSidebar({ setSheetOpen }: Props) {
             />
           ))}
         </nav>
-        
+
         <div className="mt-6 pt-6 border-t border-sidebar-border">
           <div className="flex justify-center">
             <ThemeToggle />
           </div>
         </div>
       </div>
-      
+
       <div className="p-2">
-        <Link 
-          to="/hire-me" 
+        <Link
+          to="/hire-me"
           className="block w-full py-2 px-4 bg-primary text-primary-foreground rounded-md text-center font-medium hover:bg-primary/90 transition-colors"
           onClick={handleNavItemClick}
         >
-          {isCollapsed ? <Mail size={20} /> : 'Hire Me'}
+          {isCollapsed ? <Mail size={20} /> : "Hire Me"}
         </Link>
       </div>
     </motion.aside>

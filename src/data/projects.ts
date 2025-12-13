@@ -1,61 +1,62 @@
-
-import { Project } from '@/types/project';
+import { Project } from "@/types/project";
 
 export const projects: Project[] = [
   {
-    id: '1',
-    title: 'Task Manager App',
-    description: 'A minimalist task management application with drag-and-drop interface and real-time updates.',
-    techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Firebase'],
-    imageUrl: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80',
-    githubUrl: 'https://github.com/username/task-manager',
-    demoUrl: 'https://task-manager-demo.com',
+    id: "1",
+    title: "React Prompt Search",
+    description:
+      "A simple React app that fetches data from an external API and dynamically filters results as you type.",
+    techStack: ["React", "JavaScript", "API"],
+    imageUrl:
+      "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    githubUrl: "https://github.com/odhiambo-ed/react-prompt-search",
+    demoUrl:
+      "https://react-prompt-search-mob9kyy74-white3ds-projects.vercel.app/",
     featured: true,
   },
   {
-    id: '2',
-    title: 'Weather Dashboard',
-    description: 'Real-time weather forecasting application with interactive maps and historical data visualization.',
-    techStack: ['React', 'Redux', 'Chart.js', 'OpenWeather API'],
-    imageUrl: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    githubUrl: 'https://github.com/username/weather-dashboard',
-    demoUrl: 'https://weather-dashboard-demo.com',
+    id: "2",
+    title: "React Luminous Switch",
+    description:
+      "A sleek single-page app for toggling between light and dark themes, built with React and Bootstrap.",
+    techStack: ["React", "Bootstrap", "JavaScript"],
+    imageUrl:
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    githubUrl: "https://github.com/odhiambo-ed/react-luminous-switch",
+    demoUrl: "https://react-qr-genius-7lqfmo5d2-white3ds-projects.vercel.app",
   },
   {
-    id: '3',
-    title: 'Markdown Notes',
-    description: 'A note-taking app that supports Markdown formatting with real-time preview and cloud syncing.',
-    techStack: ['React', 'Node.js', 'MongoDB', 'Express'],
-    imageUrl: 'https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    githubUrl: 'https://github.com/username/markdown-notes',
-    demoUrl: 'https://markdown-notes-demo.com',
+    id: "3",
+    title: "React Nested Menu",
+    description:
+      "A tree-view component that renders hierarchical data with recursive expand/collapse interactions.",
+    techStack: ["React", "Bootstrap", "CSS"],
+    imageUrl:
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    githubUrl: "https://github.com/odhiambo-ed/react-nested-menu",
+    demoUrl: "https://react-qr-genius-7lqfmo5d2-white3ds-projects.vercel.app",
+  },
+  {
+    id: "4",
+    title: "Code Chat App",
+    description:
+      "A React + Firebase chat and collaboration platform for developers with Google login, posts, comments, chat, and follows.",
+    techStack: ["React", "Firebase", "JavaScript"],
+    imageUrl:
+      "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    githubUrl: "https://github.com/odhiambo-ed/code-chat-app",
+    demoUrl: "https://code-chat-ten.vercel.app",
     featured: true,
   },
   {
-    id: '4',
-    title: 'Portfolio Website',
-    description: 'A personal portfolio website showcasing projects and skills with a modern and responsive design.',
-    techStack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-    imageUrl: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1307&q=80',
-    githubUrl: 'https://github.com/username/portfolio',
-    demoUrl: 'https://my-portfolio-demo.com',
-  },
-  {
-    id: '5',
-    title: 'Recipe Finder',
-    description: 'A web application to discover recipes based on available ingredients with filtering options.',
-    techStack: ['Vue.js', 'Vuex', 'Tailwind CSS', 'Recipe API'],
-    imageUrl: 'https://images.unsplash.com/photo-1556909172-8c2f041fca1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    githubUrl: 'https://github.com/username/recipe-finder',
-    demoUrl: 'https://recipe-finder-demo.com',
-  },
-  {
-    id: '6',
-    title: 'Budget Tracker',
-    description: 'A personal finance application to track income, expenses, and visualize spending habits.',
-    techStack: ['React', 'Firebase', 'Chart.js', 'Material-UI'],
-    imageUrl: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    githubUrl: 'https://github.com/username/budget-tracker',
-    demoUrl: 'https://budget-tracker-demo.com',
+    id: "5",
+    title: "React Bingebox - Netflix Clone",
+    description:
+      "A Netflix-inspired React app using Firebase and TMDb API to browse movies/TV shows and watch trailers.",
+    techStack: ["React", "Firebase", "TMDb API", "React Router"],
+    imageUrl:
+      "https://images.unsplash.com/photo-1526378722484-bd91ca387e72?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    githubUrl: "https://github.com/odhiambo-ed/react-bingebox",
+    demoUrl: "https://react-bingebox-7xo220tdo-white3ds-projects.vercel.app",
   },
 ];
