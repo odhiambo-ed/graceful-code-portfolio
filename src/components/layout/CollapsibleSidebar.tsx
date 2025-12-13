@@ -74,6 +74,7 @@ export default function CollapsibleSidebar({ setSheetOpen }: Props) {
       text: "Projects",
     },
     { href: "/resume", icon: <FileText size={20} />, text: "Resume" },
+    { href: "/mentorship", icon: <GraduationCap size={20} />, text: "Mentorship" },
   ];
 
   const socialLinks = [
