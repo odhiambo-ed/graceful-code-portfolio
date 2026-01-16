@@ -20,7 +20,7 @@ export default function Terminal() {
 
   const bioTexts = [
     "Hello there! I'm Edward Odhiambo, a maestro full-stack engineer.",
-    "King of React/Next.js + Rails | Typing TypeScript & Taming Databases | AI-Powered Fintech Maestro | Cloud-Native (Docker/K8s) | Collaborative & Adaptive",
+    "Experienced React/Next.js + Rails | Typing TypeScript & Taming Databases | AI-Powered Fintech Maestro | Cloud-Native (Docker/K8s) | Collaborative & Adaptive",
     "Type 'help' to see available commands and learn more about me.",
   ];
 
@@ -54,6 +54,7 @@ export default function Terminal() {
         typeBioSequence();
       }, 500);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const typeBioSequence = () => {
@@ -341,7 +342,7 @@ export default function Terminal() {
       if (historyIndex < history.length - 1) {
         const newIndex = historyIndex + 1;
         setHistoryIndex(newIndex);
-        let commandsHistory = history.filter(
+        const commandsHistory = history.filter(
           (item) => item.command !== "welcome" && item.command !== "system"
         );
         if (commandsHistory.length > 0) {
@@ -356,7 +357,7 @@ export default function Terminal() {
       if (historyIndex > 0) {
         const newIndex = historyIndex - 1;
         setHistoryIndex(newIndex);
-        let commandsHistory = history.filter(
+        const commandsHistory = history.filter(
           (item) => item.command !== "welcome" && item.command !== "system"
         );
         if (commandsHistory.length > 0) {
