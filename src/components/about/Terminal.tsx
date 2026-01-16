@@ -252,10 +252,10 @@ export default function Terminal() {
               <li>
                 📧 Email:{" "}
                 <a
-                  href="mailto:odhiamboedward.ouma@gmail.com"
+                  href="mailto:odhiambo.edward111@gmail.com"
                   className="text-blue-400 hover:underline"
                 >
-                  odhiamboedward.ouma@gmail.com
+                  odhiambo.edward111@gmail.com
                 </a>
               </li>
               <li>

@@ -52,7 +52,7 @@ const HireMe = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="bg-card rounded-lg p-8 shadow-lg"
         >
-          <form action="https://formsubmit.co/odhiamboedward.ouma@gmail.com" method="POST" className="space-y-6">
+          <form action="https://formsubmit.co/odhiambo.edward111@gmail.com" method="POST" className="space-y-6">
             <div>
               <label htmlFor="name" className="block text-sm font-medium mb-2">
                 Name *

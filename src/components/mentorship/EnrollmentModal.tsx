@@ -53,7 +53,7 @@ const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
 
     try {
       // Using FormSubmit.co service
-      const response = await fetch('https://formsubmit.co/odhiamboedward.ouma@gmail.com', {
+      const response = await fetch('https://formsubmit.co/odhiambo.edward111@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
