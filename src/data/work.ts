@@ -5,7 +5,7 @@ export const workProjects: WorkProject[] = [
     id: "1",
     title: "Quikk API Dashboard",
     description: "A secure Quikk API integration for seamless transactions.",
-    role: "Frontend Engineer",
+    role: "Full-stack Engineer",
     responsibilities: [
       "Built secure dashboard views for managing and monitoring API-driven transactions",
       "Implemented reusable UI components and consistent data presentation patterns",
@@ -22,7 +22,7 @@ export const workProjects: WorkProject[] = [
     id: "2",
     title: "Forge Marketplace",
     description: "A provider marketplace.",
-    role: "Frontend Engineer",
+    role: "Full-stack Engineer",
     responsibilities: [
       "Implemented marketplace UI flows and reusable components for provider discovery",
       "Ensured responsive layouts and accessible interactions across key screens",
@@ -40,7 +40,7 @@ export const workProjects: WorkProject[] = [
     title: "UndaOS",
     description:
       "A modern financial infrastructure platform designed to help businesses build, launch, and scale financial products faster.",
-    role: "Frontend Engineer",
+    role: "Full-stack Engineer",
     responsibilities: [
       "Developed user-facing product surfaces for financial infrastructure workflows",
       "Implemented UI patterns that support scalable product iteration",
@@ -58,7 +58,7 @@ export const workProjects: WorkProject[] = [
     title: "MulaFlow",
     description:
       "A scalable payment platform that enables businesses to accept, process, and track digital payments seamlessly.",
-    role: "Frontend Engineer",
+    role: "Full-stack Engineer",
     responsibilities: [
       "Built core payment dashboard screens for tracking transactions and operational states",
       "Implemented robust UI state handling for asynchronous payment flows",
@@ -76,7 +76,7 @@ export const workProjects: WorkProject[] = [
     title: "ERMS",
     description:
       "Enterprise Resource Hub that streamlines operations through an enhanced user interface built with React and Redux.",
-    role: "Frontend Engineer",
+    role: "Full-stack Engineer",
     responsibilities: [
       "Implemented operational workflows and UI modules for enterprise resource management",
       "Maintained predictable state management using Redux patterns",
@@ -92,7 +92,7 @@ export const workProjects: WorkProject[] = [
     id: "6",
     title: "SCOP",
     description: "OptiChain Solution that streamlines supply chain operations.",
-    role: "Frontend Engineer",
+    role: "Full-stack Engineer",
     responsibilities: [
       "Built UI features for planning and tracking supply chain operations",
       "Implemented data-heavy screens with consistent UX patterns and filtering",
