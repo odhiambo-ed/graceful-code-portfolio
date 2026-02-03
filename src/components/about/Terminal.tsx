@@ -54,7 +54,7 @@ export default function Terminal() {
         typeBioSequence();
       }, 500);
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const typeBioSequence = () => {
@@ -343,12 +343,12 @@ export default function Terminal() {
         const newIndex = historyIndex + 1;
         setHistoryIndex(newIndex);
         const commandsHistory = history.filter(
-          (item) => item.command !== "welcome" && item.command !== "system"
+          (item) => item.command !== "welcome" && item.command !== "system",
         );
         if (commandsHistory.length > 0) {
           setCommand(
             commandsHistory[commandsHistory.length - 1 - newIndex]?.command ||
-              ""
+              "",
           );
         }
       }
@@ -358,12 +358,12 @@ export default function Terminal() {
         const newIndex = historyIndex - 1;
         setHistoryIndex(newIndex);
         const commandsHistory = history.filter(
-          (item) => item.command !== "welcome" && item.command !== "system"
+          (item) => item.command !== "welcome" && item.command !== "system",
         );
         if (commandsHistory.length > 0) {
           setCommand(
             commandsHistory[commandsHistory.length - 1 - newIndex]?.command ||
-              ""
+              "",
           );
         }
       } else if (historyIndex === 0) {
@@ -378,7 +378,7 @@ export default function Terminal() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="bg-black border border-gray-700 rounded-lg overflow-hidden shadow-2xl mx-auto h-[80vh]"
+      className="bg-black border border-gray-700 rounded-lg overflow-hidden shadow-2xl mx-auto h-[60vh]"
     >
       <div className="bg-gray-800 px-4 py-2 flex items-center">
         <div className="flex space-x-2">
