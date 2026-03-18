@@ -25,6 +25,33 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script src="https://dfe1-41-90-176-164.ngrok-free.app/widget.js" data-key="ddd001792fe341648b5b6e91b2c4bb13" async></script>
+    <script>
+  var vapiInstance = null;
+  var assistant = "54fd607a-df54-45e6-ada5-8a99f3e9f99c";
+  var apiKey = "8b07b177-09e9-45c0-8e81-97623ca80d24";
+  (function (d, t) {
+    var g = document.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    g.src =
+      "https://cdn.jsdelivr.net/gh/VapiAI/html-script-tag@latest/dist/assets/index.js";
+    g.defer = true;
+    g.async = true;
+    s.parentNode.insertBefore(g, s);
+    g.onload = function () {
+      vapiInstance = window.vapiSDK.run({
+        apiKey: apiKey,
+        assistant: assistant,
+        config: {
+          position: "bottom-right",
+          idle: {
+            color: "#1a73e8",
+            type: "pill",
+            label: "Chat with us",
+          },
+        },
+      });
+    };
+  })(document, "script");
+</script>
   </body>
 </html>
