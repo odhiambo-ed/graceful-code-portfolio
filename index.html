@@ -27,9 +27,8 @@
     <script type="module" src="/src/main.tsx"></script>
     <script>
   var vapiInstance = null;
-  var assistant = "54fd607a-df54-45e6-ada5-8a99f3e9f99c";
+  var assistant = "30a93baf-5a56-4d11-99c0-fb8f82b2c7cb";
   var apiKey = "8b07b177-09e9-45c0-8e81-97623ca80d24";
-
   (function (d, t) {
     var g = document.createElement(t),
       s = d.getElementsByTagName(t)[0];
@@ -38,18 +37,12 @@
     g.defer = true;
     g.async = true;
     s.parentNode.insertBefore(g, s);
-
     g.onload = function () {
       vapiInstance = window.vapiSDK.run({
         apiKey: apiKey,
         assistant: assistant,
         config: {
           position: "bottom-right",
-
-          /* add these */
-          mode: "hybrid",           // enables chat + voice in one widget
-          defaultMode: "chat",      // open into chat first (optional)
-
           idle: {
             color: "#1a73e8",
             type: "pill",
