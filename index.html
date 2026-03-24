@@ -25,33 +25,22 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script>
-  var vapiInstance = null;
-  var assistant = "884d14d1-e313-4421-b9ca-9d3b97a6a23a";
-  var apiKey = "8b07b177-09e9-45c0-8e81-97623ca80d24";
-  (function (d, t) {
-    var g = document.createElement(t),
-      s = d.getElementsByTagName(t)[0];
-    g.src =
-      "https://cdn.jsdelivr.net/gh/VapiAI/html-script-tag@latest/dist/assets/index.js";
-    g.defer = true;
-    g.async = true;
-    s.parentNode.insertBefore(g, s);
-    g.onload = function () {
-      vapiInstance = window.vapiSDK.run({
-        apiKey: apiKey,
-        assistant: assistant,
-        config: {
-          position: "bottom-right",
-          idle: {
-            color: "#1a73e8",
-            type: "pill",
-            label: "Chat with us",
-          },
-        },
-      });
-    };
-  })(document, "script");
-</script>
+    <script src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js" async type="text/javascript"></script>
+
+<vapi-widget
+  public-key="8b07b177-09e9-45c0-8e81-97623ca80d24"
+  assistant-id="89d7abf0-6ea9-4cb1-ab96-1ca25c434f01"
+  mode="chat"
+  theme="light"
+  size="full"
+  position="bottom-right"
+  radius="medium"
+  accent-color="#1a73e8"
+  main-label="Chat with Acme 2 Law"
+  start-button-text="Start Voice Call"
+  end-button-text="End Call"
+  empty-chat-message="Hi! How can I help you today? You can type your message or start a voice call."
+  empty-voice-message="Click to start a voice conversation"
+></vapi-widget>
   </body>
 </html>
