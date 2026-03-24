@@ -27,83 +27,83 @@
     <script type="module" src="/src/main.tsx"></script>
     <script src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js" async type="text/javascript"></script>
 
-<!-- Chat mode (default) -->
-<div id="vapi-chat-mode">
-  <vapi-widget
-    public-key="8b07b177-09e9-45c0-8e81-97623ca80d24"
-    assistant-id="89d7abf0-6ea9-4cb1-ab96-1ca25c434f01"
-    mode="chat"
-    theme="light"
-    size="full"
-    position="bottom-right"
-    radius="medium"
-    accent-color="#1a73e8"
-    main-label="Chat with Acme 2 Law"
-    empty-chat-message="Hi! How can I help you today?"
-  ></vapi-widget>
-</div>
-
-<!-- Voice mode (hidden by default) -->
-<div id="vapi-voice-mode" style="display:none">
-  <vapi-widget
-    public-key="8b07b177-09e9-45c0-8e81-97623ca80d24"
-    assistant-id="89d7abf0-6ea9-4cb1-ab96-1ca25c434f01"
-    mode="voice"
-    theme="light"
-    size="compact"
-    position="bottom-right"
-    radius="medium"
-    accent-color="#1a73e8"
-    main-label="Call Acme 2 Law"
-    start-button-text="Start Call"
-    end-button-text="End Call"
-    empty-voice-message="Click to start a voice conversation"
-  ></vapi-widget>
-</div>
-
-<!-- Mode toggle -->
-<style>
-  #vapi-mode-toggle {
-    position: fixed;
-    bottom: 90px;
-    right: 24px;
-    z-index: 10001;
-    display: flex;
-    background: #fff;
-    border-radius: 20px;
-    padding: 3px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  }
-  #vapi-mode-toggle button {
-    border: none;
-    padding: 6px 14px;
-    border-radius: 16px;
-    cursor: pointer;
-    font-size: 13px;
-    font-weight: 500;
-    transition: all 0.2s;
-    background: transparent;
-    color: #666;
-  }
-  #vapi-mode-toggle button.active {
-    background: #1a73e8;
-    color: #fff;
-  }
-</style>
-
-<div id="vapi-mode-toggle">
-  <button id="vapi-btn-chat" class="active" onclick="vapiSwitch('chat')">&#128172; Chat</button>
-  <button id="vapi-btn-voice" onclick="vapiSwitch('voice')">&#127897; Call</button>
-</div>
-
-<script>
-  function vapiSwitch(mode) {
-    document.getElementById('vapi-chat-mode').style.display = mode === 'chat' ? '' : 'none';
-    document.getElementById('vapi-voice-mode').style.display = mode === 'voice' ? '' : 'none';
-    document.getElementById('vapi-btn-chat').className = mode === 'chat' ? 'active' : '';
-    document.getElementById('vapi-btn-voice').className = mode === 'voice' ? 'active' : '';
-  }
-</script>
+      <!-- Chat mode (default) -->
+      <div id="vapi-chat-mode">
+        <vapi-widget
+          public-key="f80414ab-72c1-42d2-bb05-6d47610bf209"
+          assistant-id="d9bcca7d-380f-4165-b148-b279d6d02066"
+          mode="chat"
+          theme="light"
+          size="full"
+          position="bottom-right"
+          radius="medium"
+          accent-color="#1a73e8"
+          main-label="Chat with Ed Associates"
+          empty-chat-message="Hi! How can I help you today?"
+        ></vapi-widget>
+      </div>
+      
+      <!-- Voice mode (hidden by default) -->
+      <div id="vapi-voice-mode" style="display:none">
+        <vapi-widget
+          public-key="f80414ab-72c1-42d2-bb05-6d47610bf209"
+          assistant-id="d9bcca7d-380f-4165-b148-b279d6d02066"
+          mode="voice"
+          theme="light"
+          size="compact"
+          position="bottom-right"
+          radius="medium"
+          accent-color="#1a73e8"
+          main-label="Call Ed Associates"
+          start-button-text="Start Call"
+          end-button-text="End Call"
+          empty-voice-message="Click to start a voice conversation"
+        ></vapi-widget>
+      </div>
+      
+      <!-- Mode toggle -->
+      <style>
+        #vapi-mode-toggle {
+          position: fixed;
+          bottom: 90px;
+          right: 24px;
+          z-index: 10001;
+          display: flex;
+          background: #fff;
+          border-radius: 20px;
+          padding: 3px;
+          box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+        #vapi-mode-toggle button {
+          border: none;
+          padding: 6px 14px;
+          border-radius: 16px;
+          cursor: pointer;
+          font-size: 13px;
+          font-weight: 500;
+          transition: all 0.2s;
+          background: transparent;
+          color: #666;
+        }
+        #vapi-mode-toggle button.active {
+          background: #1a73e8;
+          color: #fff;
+        }
+      </style>
+      
+      <div id="vapi-mode-toggle">
+        <button id="vapi-btn-chat" class="active" onclick="vapiSwitch('chat')">&#128172; Chat</button>
+        <button id="vapi-btn-voice" onclick="vapiSwitch('voice')">&#127897; Call</button>
+      </div>
+      
+      <script>
+        function vapiSwitch(mode) {
+          document.getElementById('vapi-chat-mode').style.display = mode === 'chat' ? '' : 'none';
+          document.getElementById('vapi-voice-mode').style.display = mode === 'voice' ? '' : 'none';
+          document.getElementById('vapi-btn-chat').className = mode === 'chat' ? 'active' : '';
+          document.getElementById('vapi-btn-voice').className = mode === 'voice' ? 'active' : '';
+        }
+      </script>
   </body>
 </html>
